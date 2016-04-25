@@ -1,1 +1,111 @@
-include head
+doctype html
+html lang="en"
+	include head
+
+	body
+		.master
+			include header
+			nav.nav
+				include navigation
+
+			main.main-content
+				section.slider
+					.slider-view
+						ul.slider_list
+							li.slider_item.slide
+								img.slider_pic src="assets/img/pic-slide.jpg"
+								h2.slide_title Новые скидки и новые условия в Black Desert
+								.slide_text Получи до 20 кк внутриигровой валюты в подарок!
+						ul.slider_nav
+							li.slider-nav_item
+								.slider-nav_text Новые скидки и новые условия в Black Desert
+						.slider_arr.arr-l
+						.slider_arr.arr-r
+
+				section.games
+					ul.actions_list
+						li.actions_item
+							a.actions_link
+								span.actions_icon.i-coin
+								span.actions_text
+						li.actions_item
+							a.actions_link
+								span.actions_icon
+								span.actions_text
+						li.actions_item.is-active
+							a.actions_link
+								span.actions_icon
+								span.actions_text
+						li.actions_item
+							a.actions_link
+								span.actions_icon
+								span.actions_text
+						li.actions_item
+							a.actions_link
+								span.actions_icon
+								span.actions_text
+					.actions_content
+						.actions_type
+							a.actions-type_cubes
+								span.actions-type_icon.i-cube
+								span.actions-type_text
+							a.actions-type_list.is-active
+								span.actions-type_icon.i-list
+								span.actions-type_text
+						.actions.is-list
+							.action_game
+								.action_letter
+								table.action_table
+									tr
+										th
+											span.game_title
+										td
+											span.game_info
+						.actions.is-cubes
+							.action_game
+								img.action-game_pic
+								.action-game_info
+									.action-game_title
+									.action-game_text
+				section.about
+					h3.section_title
+					ul.about_list
+						li.about_item
+							.about_pic
+							h4.about_title
+							.about_text
+						li.about_item
+							.about_pic
+							h4.about_title
+							.about_text
+						li.about_item
+							.about_pic
+							h4.about_title
+							.about_text
+
+				section.payment
+					h3.section_title
+					ul.payment_list
+						li.payment_item
+							.payment_pic
+								img
+							.payment_text
+						li.payment_item
+							.payment_pic
+								img
+							.payment_text
+						li.payment_item
+							.payment_pic
+								img
+							.payment_text
+						li.payment_item
+							.payment_pic
+								img
+							.payment_text
+						li.payment_item
+							.payment_pic
+								img
+							.payment_text
+
+			include footer
+
