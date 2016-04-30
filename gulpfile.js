@@ -27,17 +27,17 @@ var paths = {
 
 // Одноразовая сборка проекта
 gulp.task('default', function() {
-  gulp.start('include', 'styles', 'scripts', 'imgmin');
+  gulp.start('slim', 'styles', 'scripts', 'imgmin');
 });
 
 // Запуск живой сборки
 gulp.task('live', function() {
-  gulp.start('server', 'include', 'styles', 'scripts', 'imgmin', 'watch');
+  gulp.start('server', 'slim', 'styles', 'scripts', 'imgmin', 'watch');
 });
 
 // Туннель
 /*gulp.task('external-world', function() {
-  gulp.start('web-server', 'include', 'styles', 'scripts', 'watch');
+  gulp.start('web-server', 'slim', 'styles', 'scripts', 'watch');
 });*/
 
 // Федеральная служба по контролю за оборотом файлов
@@ -78,7 +78,7 @@ gulp.task('styles', function () {
     require('postcss-nested'),
     require('postcss-clearfix'),
     require('postcss-focus'),
-    require('postcss-assets'),
+    require('postcss-assets', { cachebuster: true }),
     require('postcss-color-alpha'),
     require('postcss-color-function'),
     require('postcss-inline-svg'),
@@ -88,7 +88,7 @@ gulp.task('styles', function () {
     require('postcss-custom-media'),
     require('postcss-media-minmax'),
     require('postcss-will-change'),
-    require('autoprefixer')
+    require('autoprefixer', { browsers: ['last 2 versions', 'ie 10'] })
   ];
   var cssnano = require('cssnano');
 

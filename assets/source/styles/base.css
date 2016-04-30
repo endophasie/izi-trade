@@ -1,0 +1,16 @@
+@import 'normalize.css/normalize';
+@import 'vars';
+
+@import 'page';
+
+@import 'header';
+@import 'logo';
+@import 'nav';
+@import 'footer';
+
+@import 'btn';
+
+@import 'slider';
+@import 'games';
+@import 'about';
+@import 'payment';

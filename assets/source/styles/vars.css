@@ -1,0 +1,17 @@
+$base: #000;
+$small-text: #959595;
+$base-bd: #7e7e7e;
+$color-active: #ff5012;
+$nav-link: #3c3d41;
+
+$bg-main: #1c203a;
+$bg-base: #101010;
+
+$sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
+
+@define-mixin icon $name, $size {
+	background: inline('../../img/$(name).svg') center center no-repeat;
+	size: $size;
+	background-size: 100% 100%;
+	transition: background 300ms ease;
+}

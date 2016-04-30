@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.master {
+    font: 300 12px $sans-serif;
+    background-color: $bg-main;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.section_title {
+    color: $nav-link;
+    font-weight: 300;
+    font-size: 26px;
+    margin: 0 0 20px;
+    text-align: center;
+}

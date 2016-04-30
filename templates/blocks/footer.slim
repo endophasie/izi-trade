@@ -2,18 +2,32 @@ footer.footer
 	.footer-content
 		.footer-col_logo
 			a.footer-logo IZI-Trade
+			.copyright &copy; 2016 IZI-Trade
 		.footer-col_nav
-			include navigation
+			include nav-menu
 		.footer_col_social
-			h4.footer_title
+			h4.footer_title мы в соцсетях
 			ul.social_list
 				li.social_item
-					a.social
-						span.social_icon
-						span.social_text
+					a.social_link href="http://fb.com"
+						span.social_icon.i-fb
+						span.social_text Facebook
+				li.social_item
+					a.social_link href="http://twitter.com"
+						span.social_icon.i-twi
+						span.social_text Twitter
+				li.social_item
+					a.social_link href="http://instagram.com"
+						span.social_icon.i-insta
+						span.social_text Instagram
+				li.social_item
+					a.social_link href="/rss"
+						span.social_icon.i-rss
+						span.social_text RSS
+
 		.footer-col_subscribe
-			h4.footer_title
-			.footer_info
+			h4.footer_title подпишитесь на наши новости
+			.footer_info И вы будете в всегда в курсе свежих акций и предложений
 			form.form_subscribe
 				.form-subscribe_wrap
 					input.form-subscribe_field type="email" placeholder="E-mail" name="subscribe_email"

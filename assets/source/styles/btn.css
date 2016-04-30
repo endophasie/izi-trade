@@ -1,0 +1,73 @@
+.btn {
+	display: inline-block;
+	border: 2px solid $base-bd;
+	border-radius: 3px;
+	height: 33px;
+	line-height: 23px;
+	padding: 0 10px;
+	margin-right: 7px;
+	text-align: center;
+	text-decoration: none;
+	transition: border-color 300ms ease;
+
+	&:hover {
+		border-color: $color-active;
+
+		.btn_text {
+			color: $color-active;
+		}
+
+		.i-user {
+			@mixin icon i-user-hov, 16px;
+		}
+
+		.i-logout {
+			@mixin icon i-logout-hov, 16px;
+		}
+	}
+
+	&.is-active {
+		border-color: $color-active;
+
+		.btn_text {
+			color: $color-active;
+		}
+	}
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.btn_icon {
+	display: inline-block;
+	vertical-align: middle;
+
+	& + .btn_text {
+		margin-left: 7px;
+	}
+}
+
+.btn_text {
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	font: 400 12px/1 $sans-serif;
+	transition: color 300ms ease;
+}
+
+.i-user {
+	@mixin icon i-user, 16px;
+}
+
+.i-logout {
+	@mixin icon i-logout, 16px;
+}
+
+.i-question {
+	@mixin icon i-question, 16px;
+}
+
+.i-message {
+	@mixin icon i-message, 16px;
+}

@@ -1,0 +1,50 @@
+.about {
+	background-color: #fff;
+	padding: 20px 0 35px;
+}
+
+.about_list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 0;
+}
+
+.about_item {
+	display: inline-block;
+	font-size: 14px;
+	width: 33.3%;
+	text-align: center;
+	font-weight: 300;
+	color: #000;
+	padding: 0 15px;
+}
+
+.about_title {
+	font-weight: 300;
+	font-size: 18px;
+	margin: 0 0 7px;
+}
+
+.about_pic {
+	display: block;
+	margin: 0 auto 15px;
+}
+
+.i-money {
+	background: inline('../../img/i-money.png') 0 0 no-repeat;
+	size: size('../../img/i-money.png');
+	background-size: 100%;
+}
+
+.i-safety {
+	background: inline('../../img/i-safety.png') 0 0 no-repeat;
+	size: size('../../img/i-safety.png');
+	background-size: 100%;
+}
+
+.i-sale {
+	background: inline('../../img/i-sale.png') 0 0 no-repeat;
+	size: size('../../img/i-sale.png');
+	background-size: 100%;
+}

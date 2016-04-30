@@ -1,0 +1,23 @@
+.payment {
+	background-color: #efefef;
+	padding: 25px 0 40px;
+}
+
+.payment_list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 0;
+	text-align: center;
+}
+
+.payment_item {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}

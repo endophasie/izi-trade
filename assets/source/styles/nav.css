@@ -1,0 +1,50 @@
+.nav {
+	background-color: #fff;
+	height: 40px;
+}
+
+.nav_list {
+	size: 940px 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0;
+	padding: 0;
+	list-style: none;
+	text-align: justify;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+.nav_item {
+	display: inline-block;
+	font: 700 12px/40px $sans-serif;
+	text-transform: uppercase;
+}
+
+.nav_link {
+	text-decoration: none;
+	color: $nav-link;
+	transition: color 300ms ease;
+
+	&:hover,
+	.is-active & {
+		color: $color-active;
+	}
+}
+
+.bubble {
+	border-radius: 50%;
+	background-color: $color-active;
+	color: #fff;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 300;
+	padding: 0 4px;
+	margin-left: 2px;
+}
+
+

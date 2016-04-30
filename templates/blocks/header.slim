@@ -2,23 +2,23 @@ header.header
     .header-content
         .header_left
             a.btn.btn-user href="/profile.html"
-                span.i-user
-                span.btn_text endophasie  / {username}
+                span.btn_icon.i-user
+                span.btn_text endophasie
             a.btn.btn-logout href="/logout"
-                span.i-logout
+                span.btn_icon.i-logout
 
         /- if authentificate? /
         /- else
             /a.btn.btn-auth href="/login"
-             /   span.i-auth
+             /   span.btn_icon.i-user
               /  span.btn_text Войти
 
         .header_center
             h1.logo
                 a.logo_link href="index.html" IZI-Trade
         .header_right
-            a.btn.btn-help href="/help.html"
-                span.i-question
-            a.btn.btn-message href="/message.html"
-                span.i-message
+            a.btn.btn-help.is-active href="/help.html"
+                span.btn_icon.i-question
+            a.btn.btn-message.is-active href="/message.html"
+                span.btn_icon.i-message
                 span.btn_text Сообщения (2)
