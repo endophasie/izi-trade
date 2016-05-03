@@ -653,6 +653,46 @@ html, body {
 	margin-bottom: 12px;
 }
 
+.form_subscribe {
+
+}
+
+.form-subscribe_wrap {
+	position: relative;
+	cursor: text;
+}
+
+.form-subscribe_wrap:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 0 4px 4px 0;
+  background: #8a8c8e url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215.781%22%20height%3D%2210.906%22%20viewBox%3D%220%200%2015.781%2010.906%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23fff%3Bfill-rule%3Aevenodd%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20id%3D%22Mail_Icon%22%20data-name%3D%22Mail%20Icon%22%20class%3D%22cls-1%22%20d%3D%22M933.63%20551.511a1.022%201.022%200%200%201-1%201h-13.779a1.022%201.022%200%200%201-1-1v-8.882a1%201%200%200%201%20.965-.982l.018-.055h13.778l.018.055a.994.994%200%200%201%201%20.982v8.882zm-15.78%201zm0%200zm14.561-2.42v-6.079l-3.986%203.039zm0-7.281h-13.342c2.221%201.675%204.441%203.349%206.662%205.042a933.243%20933.243%200%200%201%206.68-5.041zm0%208.482l-4.8-3.622-1.275.983h-1.219l-1.256-.965-4.787%203.6h13.342zm-9.374-4.241l-3.968-3.039v6.079z%22%20transform%3D%22translate%28-917.844%20-541.594%29%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
+  cursor: pointer;
+}
+
+.form-subscribe_field {
+	border: 0;
+	outline: 0;
+	border-radius: 4px;
+	width: 100%;
+	height: 36px;
+	color: #fff;
+	background-color: #4e5054;
+	text-indent: 12px;
+	padding-right: 36px;
+	font-size: 12px;
+}
+
+.form-subscribe_btn {
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+	visibility: hidden;
+}
+
 .btn {
 	display: inline-block;
 	border: 2px solid #7e7e7e;

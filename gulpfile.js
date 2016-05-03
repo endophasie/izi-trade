@@ -40,7 +40,7 @@ gulp.task('live', function() {
   gulp.start('web-server', 'slim', 'styles', 'scripts', 'watch');
 });*/
 
-// Федеральная служба по контролю за оборотом файлов
+// watcher
 gulp.task('watch', function() {
   gulp.watch(paths.styles + '*.css', ['styles']);
   gulp.watch(paths.scripts + '*.js', ['scripts']);
