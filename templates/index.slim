@@ -47,24 +47,47 @@ html lang="en"
                     .actions_content
                         .actions_menu
                             .actions_types
-                                a.actions-type.is-active href="#"
+                                a.actions-type href="#"
                                     span.actions-type_icon.i-cube
                                     span.actions-type_text Плиткой
-                                a.actions-type
+                                a.actions-type.is-active
                                     span.actions-type_icon.i-list href="#"
                                     span.actions-type_text Списком
-                        / .actions.is-list
-                        /     .action_game
-                        /         .action_letter
-                        /         table.action_table
-                        /             tr
-                        /                 th
-                        /                     span.game_title
-                        /                 td
-                        /                     span.game_info
-                        .actions.is-cubes
-                            a href="/"
-                                img src="assets/img/pic-games.jpg"
+                        .actions.is-list
+                            .action_columns
+                                .action_list-letter
+                                    .action_letter
+                                        span.action-letter_letter A
+                                    table.action_table
+                                        tr
+                                            th
+                                                span.game_title Albion Online
+                                                span.badge.is-top top
+                                            td
+                                                span.game_info 14 предложений
+                                        tr
+                                            th
+                                                span.game_title Atlantica
+                                            td
+                                                span.game_info 30 предложений
+                                .action_list-letter
+                                    .action_letter
+                                        span.action-letter_letter Б
+                                    table.action_table
+                                        tr
+                                            th
+                                                span.game_title Black Desert
+                                            td
+                                                span.game_info 144 предложений
+                                        tr
+                                            th
+                                                span.game_title Black Books
+                                                span.badge.is-new new
+                                            td
+                                                span.game_info 3 предложеня
+                        / .actions.is-cubes
+                        /     a href="/"
+                        /         img src="assets/img/pic-games.jpg"
                             / .action_game
                             /     img.action-game_pic
                             /     .action-game_info

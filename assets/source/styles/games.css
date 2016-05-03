@@ -1,3 +1,6 @@
+.actions {
+	padding: 30px 0 80px;
+}
 
 .actions_list {
 	margin: 0;
@@ -61,40 +64,32 @@
 .actions_icon {
 	display: block;
 	margin: 0 auto 5px;
-}
 
-.i-coins {
-	background: inline('../../img/i-coins.png') 0 0 no-repeat;
-	size: 25px;
-	background-size: 100% 100%;
-	transition: background 300ms ease;
-}
+	&.i-coins {
+		background: inline('../../img/i-coins.png') 0 0 no-repeat;
+		size: 25px;
+		background-size: 100% 100%;
+		transition: background 300ms ease;
+	}
 
-.i-values {
-	@mixin icon i-values, 25px;
-}
+	&.i-values {
+		@mixin icon i-values, 25px;
+	}
 
-.i-driver {
-	background: inline('../../img/i-driver.png') 0 0 no-repeat;
-	size: 25px;
-	background-size: 100% 100%;
-	transition: background 300ms ease;
-}
+	&.i-driver {
+		background: inline('../../img/i-driver.png') 0 0 no-repeat;
+		size: 25px;
+		background-size: 100% 100%;
+		transition: background 300ms ease;
+	}
 
-.i-wannabuy {
-	@mixin icon i-wannabuy, 25px;
-}
+	&.i-wannabuy {
+		@mixin icon i-wannabuy, 25px;
+	}
 
-.i-onetime {
-	@mixin icon i-onetime, 25px;
-}
-
-.i-cube {
-	@mixin icon i-cube, 12px;
-}
-
-.i-list {
-	@mixin icon i-list, 12px;
+	&.i-onetime {
+		@mixin icon i-onetime, 25px;
+	}
 }
 
 .actions_menu {
@@ -115,12 +110,33 @@
 	color: #fff;
 	text-decoration: none;
 	padding: 3px 5px;
+
+	&.is-active {
+		background-color: #fff;
+		color: $bg-main;
+
+		.i-cube {
+			@mixin icon i-cube-act, 12px;
+		}
+
+		.i-list {
+			@mixin icon i-list-act, 12px;
+		}
+	}
 }
 
 .actions-type_icon {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 4px;
+
+	&.i-cube {
+		@mixin icon i-cube, 12px;
+	}
+
+	&.i-list {
+		@mixin icon i-list, 12px;
+	}
 }
 
 .actions-type_text {
@@ -130,4 +146,50 @@
 
 .actions.is-cubes {
 	text-align: center;
+}
+
+.action_columns {
+	column-count: 2;
+    column-gap: 20px;
+}
+
+.action_list-letter {
+	clear: fix;
+}
+
+.action_letter {
+	float: left;
+	margin-right: 20px;
+}
+
+.action_table {
+	float: left;
+	color: #fff;
+    width: 87%;
+    table-layout: fixed;
+
+	td, th {
+		height: 40px;
+		border-bottom: 1px solid #fff;
+		text-align: left;
+	}
+	td {
+		text-align: right;
+		font-weight: 300;
+	}
+	th {
+		font-weight: 400;
+		font-size: 16px;
+	}
+}
+
+.action-letter_letter {
+	border: 1px solid #fff;
+	border-radius: 1px;
+	display: inline-block;
+	size: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	color: #fff;
 }

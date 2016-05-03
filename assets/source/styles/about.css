@@ -29,22 +29,16 @@
 .about_pic {
 	display: block;
 	margin: 0 auto 15px;
-}
 
-.i-money {
-	background: inline('../../img/i-money.png') 0 0 no-repeat;
-	size: size('../../img/i-money.png');
-	background-size: 100%;
-}
+	.i-money {
+		@mixin pic i-money;
+	}
 
-.i-safety {
-	background: inline('../../img/i-safety.png') 0 0 no-repeat;
-	size: size('../../img/i-safety.png');
-	background-size: 100%;
-}
+	.i-safety {
+		@mixin pic i-safety;
+	}
 
-.i-sale {
-	background: inline('../../img/i-sale.png') 0 0 no-repeat;
-	size: size('../../img/i-sale.png');
-	background-size: 100%;
+	.i-sale {
+		@mixin pic i-sale;
+	}
 }
