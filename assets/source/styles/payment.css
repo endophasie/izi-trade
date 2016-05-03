@@ -1,6 +1,6 @@
 .payment {
-	background-color: #efefef;
-	padding: 25px 0 40px;
+	padding: 35px 0 40px;
+	background: linear-gradient( to top, rgba(0,0,0,.08) 0%, rgba(255,255,255,0.5) 100%) #fff;
 }
 
 .payment_list {
@@ -32,6 +32,7 @@
 	background-color: #eee;
 	height: 75px;
     line-height: 92px;
+    background: linear-gradient( to top, rgba(0,0,0,.08) 0%, rgba(255,255,255,0) 50%);
 }
 
 .payment_name {

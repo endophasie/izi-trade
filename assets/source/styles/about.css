@@ -1,11 +1,12 @@
 .about {
-	background-color: #fff;
-	padding: 20px 0 35px;
+	padding: 20px 0 0;
+    background: linear-gradient( to top, rgba(0,0,0,.08) 0%, rgba(255,255,255,0) 100%) #fff;
 }
 
 .about_list {
 	margin: 0;
 	padding: 0;
+	border-bottom: 2px solid #fff;
 	list-style-type: none;
 	font-size: 0;
 }
@@ -17,7 +18,12 @@
 	text-align: center;
 	font-weight: 300;
 	color: #000;
-	padding: 0 15px;
+	padding: 0 30px 25px;
+	border-right: 2px solid #fff;
+
+	&:last-child {
+		border-right: 0;
+	}
 }
 
 .about_title {
@@ -30,15 +36,15 @@
 	display: block;
 	margin: 0 auto 15px;
 
-	.i-money {
+	&.i-money {
 		@mixin pic i-money;
 	}
 
-	.i-safety {
+	&.i-safety {
 		@mixin pic i-safety;
 	}
 
-	.i-sale {
+	&.i-sale {
 		@mixin pic i-sale;
 	}
 }

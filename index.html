@@ -54,11 +54,23 @@
         </ul>
       </nav>
       <main class="main-content">
-        <section class="slider">
-          <div class="slider-view">
-            <ul class="slider_list">
+        <section class="slider" id="main-slider">
+          <div class="slider-view viewport">
+            <a class="buttons prev"></a>
+            <ul class="slider_list overview">
               <li class="slider_item slide">
-                <img class="slider_pic" src="assets/img/pic-slide.jpg" />
+                <img class="slider_pic" src="assets/img/pic-slide.jpg" width="940px" />
+                <div class="slider_text">
+                  <h2 class="slide_title">
+                    Новые скидки и новые условия в Black Desert
+                  </h2>
+                  <div class="slide_text">
+                    Получи до 10 кк внутриигровой валюты в подарок!
+                  </div>
+                </div>
+              </li>
+              <li class="slider_item slide">
+                <img class="slider_pic" src="assets/img/pic-slide.jpg" width="940px" />
                 <div class="slider_text">
                   <h2 class="slide_title">
                     Новые скидки и новые условия в Black Desert
@@ -68,80 +80,117 @@
                   </div>
                 </div>
               </li>
+              <li class="slider_item slide">
+                <img class="slider_pic" src="assets/img/pic-slide.jpg" width="940px" />
+                <div class="slider_text">
+                  <h2 class="slide_title">
+                    Новые скидки и новые условия в Black Desert
+                  </h2>
+                  <div class="slide_text">
+                    Получи до 30 кк внутриигровой валюты в подарок!
+                  </div>
+                </div>
+              </li>
             </ul>
+            <a class="buttons next"></a>
           </div>
+          <ul class="slider_nav bullets">
+            <li class="slider-nav_item">
+              <a class="slider-nav_link bullet active" data-slide="0" href="#">Warframe: особые скидки новичкам!</a>
+            </li>
+            <li class="slider-nav_item">
+              <a class="slider-nav_link bullet" data-slide="1" href="#">Warframe: особые скидки новичкам!</a>
+            </li>
+            <li class="slider-nav_item">
+              <a class="slider-nav_link bullet" data-slide="2" href="#">Warframe: особые скидки новичкам!</a>
+            </li>
+          </ul>
         </section>
         <section class="games">
           <ul class="actions_list">
             <li class="actions_item">
-              <a class="actions_link"><span class="actions_icon i-coins"></span><span class="actions_text">Игровая валюта</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-coins"></span><span class="actions_text">Игровая валюта</span></a>
             </li>
             <li class="actions_item">
-              <a class="actions_link"><span class="actions_icon i-values"></span><span class="actions_text">Игровые ценности</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-values"></span><span class="actions_text">Игровые ценности</span></a>
             </li>
             <li class="actions_item is-active">
-              <a class="actions_link"><span class="actions_icon i-driver"></span><span class="actions_text">Услуги драйвера</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-driver"></span><span class="actions_text">Услуги драйвера</span></a>
             </li>
             <li class="actions_item">
-              <a class="actions_link"><span class="actions_icon i-wannabuy"></span><span class="actions_text">Хочу купить</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-wannabuy"></span><span class="actions_text">Хочу купить</span></a>
             </li>
             <li class="actions_item">
-              <a class="actions_link"><span class="actions_icon i-onetime"></span><span class="actions_text">Разовая продажа</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-onetime"></span><span class="actions_text">Разовая продажа</span></a>
             </li>
           </ul>
-          <div class="actions_content">
+          <div class="actions_content" id="tab-slider">
             <div class="actions_menu">
-              <div class="actions_types">
-                <a class="actions-type" href="#"><span class="actions-type_icon i-cube"></span><span class="actions-type_text">Плиткой</span></a><a class="actions-type is-active"><span class="actions-type_icon i-list" href="#"></span><span class="actions-type_text">Списком</span></a>
+              <div class="actions_types bullets">
+                <a class="actions-type bullet active" data-slide="0" href="#"><span class="actions-type_icon i-cube"></span><span class="actions-type_text">Плиткой</span></a><a class="actions-type bullet" data-slide="1" href="#"><span class="actions-type_icon i-list"></span><span class="actions-type_text">Списком</span></a>
               </div>
             </div>
-            <div class="actions is-list">
-              <div class="action_columns">
-                <div class="action_list-letter">
-                  <div class="action_letter">
-                    <span class="action-letter_letter">A</span>
+            <div class="actions_viewport viewport">
+              <div class="actions_overview overview">
+                <div class="actions is-cubes">
+                  <a href="/"><img src="assets/img/pic-games.jpg" /></a>
+                  <div class="action_game">
+                    <img class="action-game_pic" />
+                    <div class="action-game_info">
+                      <div class="action-game_title"></div>
+                      <div class="action-game_text"></div>
+                    </div>
                   </div>
-                  <table class="action_table">
-                    <tr>
-                      <th>
-                        <span class="game_title">Albion Online</span><span class="badge is-top">top</span>
-                      </th>
-                      <td>
-                        <span class="game_info">14 предложений</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <span class="game_title">Atlantica</span>
-                      </th>
-                      <td>
-                        <span class="game_info">30 предложений</span>
-                      </td>
-                    </tr>
-                  </table>
                 </div>
-                <div class="action_list-letter">
-                  <div class="action_letter">
-                    <span class="action-letter_letter">Б</span>
+                <div class="actions is-list">
+                  <div class="action_columns">
+                    <div class="action_list-letter">
+                      <div class="action_letter">
+                        <span class="action-letter_letter">A</span>
+                      </div>
+                      <table class="action_table">
+                        <tr>
+                          <th>
+                            <span class="game_title">Albion Online</span><span class="badge is-top">top</span>
+                          </th>
+                          <td>
+                            <span class="game_info">14 предложений</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="game_title">Atlantica</span>
+                          </th>
+                          <td>
+                            <span class="game_info">30 предложений</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="action_list-letter">
+                      <div class="action_letter">
+                        <span class="action-letter_letter">Б</span>
+                      </div>
+                      <table class="action_table">
+                        <tr>
+                          <th>
+                            <span class="game_title">Black Desert</span>
+                          </th>
+                          <td>
+                            <span class="game_info">144 предложений</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="game_title">Black Books</span><span class="badge is-new">new</span>
+                          </th>
+                          <td>
+                            <span class="game_info">3 предложеня</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
                   </div>
-                  <table class="action_table">
-                    <tr>
-                      <th>
-                        <span class="game_title">Black Desert</span>
-                      </th>
-                      <td>
-                        <span class="game_info">144 предложений</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <span class="game_title">Black Books</span><span class="badge is-new">new</span>
-                      </th>
-                      <td>
-                        <span class="game_info">3 предложеня</span>
-                      </td>
-                    </tr>
-                  </table>
                 </div>
               </div>
             </div>
@@ -297,8 +346,7 @@
         </div>
       </footer>
       <script src="assets/js/jquery-2.1.3.min.js"></script>
-      <script src="assets/js/fotorama.js"></script>
-      <link href="assets/css/fotorama.css" />
+      <script src="assets/js/jquery.tinycarousel.min.js"></script>
       <script src="assets/js/scripts.min.js"></script>
     </div>
   </body>
