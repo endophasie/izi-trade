@@ -849,6 +849,20 @@ html, body {
 	-webkit-transition: background 300ms ease;
 	transition: background 300ms ease;
 }
+
+.btn_load {
+	text-decoration: none;
+	margin: 0 auto;
+	width: 220px;
+	height: 45px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	font-size: 18px;
+	background: -webkit-linear-gradient(left, #ff5012 0%, #1e4486 100%);
+	background: linear-gradient(to right, #ff5012 0%, #1e4486 100%);
+}
 .badge {
 	display: inline-block;
 	vertical-align: top;
@@ -1146,7 +1160,7 @@ html, body {
 	width: 940px;
 	overflow: hidden;
 	position: relative;
-	height: 40vh;
+	height: 140vh;
 }
 
 .actions_overview:after {
@@ -1244,6 +1258,10 @@ html, body {
 	vertical-align: middle;
 }
 
+.action_game {
+	margin-bottom: 35px;
+}
+
 .actions.is-cubes {
 	text-align: center;
 }
@@ -1278,7 +1296,6 @@ html, body {
 .action_table td, .action_table th {
   height: 40px;
   border-bottom: 1px solid #fff;
-  text-align: left;
 }
 
 .action_table td {
@@ -1289,6 +1306,7 @@ html, body {
 .action_table th {
   font-weight: 400;
   font-size: 16px;
+  text-align: left;
 }
 
 .action-letter_letter {

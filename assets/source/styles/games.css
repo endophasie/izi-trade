@@ -97,7 +97,7 @@
 	width: 940px;
 	overflow: hidden;
 	position: relative;
-	height: 40vh;
+	height: 140vh;
 }
 
 .actions_overview {
@@ -165,6 +165,10 @@
 	vertical-align: middle;
 }
 
+.action_game {
+	margin-bottom: 35px;
+}
+
 .actions.is-cubes {
 	text-align: center;
 }
@@ -192,7 +196,6 @@
 	td, th {
 		height: 40px;
 		border-bottom: 1px solid #fff;
-		text-align: left;
 	}
 	td {
 		text-align: right;
@@ -201,6 +204,7 @@
 	th {
 		font-weight: 400;
 		font-size: 16px;
+		text-align: left;
 	}
 }
 
