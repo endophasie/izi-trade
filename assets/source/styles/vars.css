@@ -15,3 +15,9 @@ $sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
 	background-size: 100% 100%;
 	transition: background 300ms ease;
 }
+
+@define-mixin pic $name {
+	background: inline('../../img/$(name).png') center center no-repeat;
+	size: size('../../img/$name.png');
+	background-size: 100% 100%;
+}

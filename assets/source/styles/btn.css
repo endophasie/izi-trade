@@ -3,7 +3,7 @@
 	border: 2px solid $base-bd;
 	border-radius: 3px;
 	height: 33px;
-	line-height: 23px;
+	line-height: 27px;
 	padding: 0 10px;
 	margin-right: 7px;
 	text-align: center;
@@ -70,4 +70,16 @@
 
 .i-message {
 	@mixin icon i-message, 16px;
+}
+
+.btn_load {
+	text-decoration: none;
+	margin: 0 auto;
+	size: 220px 45px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	font-size: 18px;
+	background: linear-gradient(to right, #ff5012 0%, #1e4486 100%);
 }

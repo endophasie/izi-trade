@@ -7,8 +7,10 @@
 @import 'logo';
 @import 'nav';
 @import 'footer';
+@import 'popup';
 
 @import 'btn';
+@import 'badge';
 
 @import 'slider';
 @import 'games';

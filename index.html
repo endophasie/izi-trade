@@ -55,11 +55,23 @@
         </ul>
       </nav>
       <main class="main-content">
-        <section class="slider">
-          <div class="slider-view">
-            <ul class="slider_list">
+        <section class="slider" id="main-slider">
+          <div class="slider-view viewport">
+            <a class="buttons prev"></a>
+            <ul class="slider_list overview">
               <li class="slider_item slide">
-                <img class="slider_pic" src="assets/img/pic-slide.jpg" />
+                <img class="slider_pic" src="assets/img/pic-slide.jpg" width="940px" />
+                <div class="slider_text">
+                  <h2 class="slide_title">
+                    Новые скидки и новые условия в Black Desert
+                  </h2>
+                  <div class="slide_text">
+                    Получи до 10 кк внутриигровой валюты в подарок!
+                  </div>
+                </div>
+              </li>
+              <li class="slider_item slide">
+                <img class="slider_pic" src="assets/img/pic-slide.jpg" width="940px" />
                 <div class="slider_text">
                   <h2 class="slide_title">
                     Новые скидки и новые условия в Black Desert
@@ -69,35 +81,120 @@
                   </div>
                 </div>
               </li>
+              <li class="slider_item slide">
+                <img class="slider_pic" src="assets/img/pic-slide.jpg" width="940px" />
+                <div class="slider_text">
+                  <h2 class="slide_title">
+                    Новые скидки и новые условия в Black Desert
+                  </h2>
+                  <div class="slide_text">
+                    Получи до 30 кк внутриигровой валюты в подарок!
+                  </div>
+                </div>
+              </li>
             </ul>
+            <a class="buttons next"></a>
           </div>
+          <ul class="slider_nav bullets">
+            <li class="slider-nav_item">
+              <a class="slider-nav_link bullet active" data-slide="0" href="#">Warframe: особые скидки новичкам!</a>
+            </li>
+            <li class="slider-nav_item">
+              <a class="slider-nav_link bullet" data-slide="1" href="#">Warframe: особые скидки новичкам!</a>
+            </li>
+            <li class="slider-nav_item">
+              <a class="slider-nav_link bullet" data-slide="2" href="#">Warframe: особые скидки новичкам!</a>
+            </li>
+          </ul>
         </section>
         <section class="games">
           <ul class="actions_list">
             <li class="actions_item">
-              <a class="actions_link"><span class="actions_icon i-coins"></span><span class="actions_text">Игровая валюта</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-coins"></span><span class="actions_text">Игровая валюта</span></a>
             </li>
             <li class="actions_item">
-              <a class="actions_link"><span class="actions_icon i-values"></span><span class="actions_text">Игровые ценности</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-values"></span><span class="actions_text">Игровые ценности</span></a>
             </li>
             <li class="actions_item is-active">
-              <a class="actions_link"><span class="actions_icon i-driver"></span><span class="actions_text">Услуги драйвера</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-driver"></span><span class="actions_text">Услуги драйвера</span></a>
             </li>
             <li class="actions_item">
-              <a class="actions_link"><span class="actions_icon i-wannabuy"></span><span class="actions_text">Хочу купить</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-wannabuy"></span><span class="actions_text">Хочу купить</span></a>
             </li>
             <li class="actions_item">
-              <a class="actions_link"><span class="actions_icon i-onetime"></span><span class="actions_text">Разовая продажа</span></a>
+              <a class="actions_link" href="#"><span class="actions_icon i-onetime"></span><span class="actions_text">Разовая продажа</span></a>
             </li>
           </ul>
-          <div class="actions_content">
+          <div class="actions_content" id="tab-slider">
             <div class="actions_menu">
-              <div class="actions_types">
-                <a class="actions-type is-active" href="#"><span class="actions-type_icon i-cube"></span><span class="actions-type_text">Плиткой</span></a><a class="actions-type"><span class="actions-type_icon i-list" href="#"></span><span class="actions-type_text">Списком</span></a>
+              <div class="actions_types bullets">
+                <a class="actions-type bullet active" data-slide="0" href="#"><span class="actions-type_icon i-cube"></span><span class="actions-type_text">Плиткой</span></a><a class="actions-type bullet" data-slide="1" href="#"><span class="actions-type_icon i-list"></span><span class="actions-type_text">Списком</span></a>
               </div>
             </div>
-            <div class="actions is-cubes">
-              <a href="/"><img src="assets/img/pic-games.jpg" /></a>
+            <div class="actions_viewport viewport">
+              <div class="actions_overview overview">
+                <div class="actions is-cubes">
+                  <a href="/"><img src="assets/img/pic-games.jpg" /></a>
+                  <div class="action_game">
+                    <img class="action-game_pic" />
+                    <div class="action-game_info">
+                      <div class="action-game_title"></div>
+                      <div class="action-game_text"></div>
+                    </div>
+                  </div>
+                  <a class="btn_load" href="#">Показать еще</a>
+                </div>
+                <div class="actions is-list">
+                  <div class="action_columns">
+                    <div class="action_list-letter">
+                      <div class="action_letter">
+                        <span class="action-letter_letter">A</span>
+                      </div>
+                      <table class="action_table">
+                        <tr>
+                          <th>
+                            <span class="game_title">Albion Online</span><span class="badge is-top">top</span>
+                          </th>
+                          <td>
+                            <span class="game_info">14 предложений</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="game_title">Atlantica</span>
+                          </th>
+                          <td>
+                            <span class="game_info">30 предложений</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="action_list-letter">
+                      <div class="action_letter">
+                        <span class="action-letter_letter">Б</span>
+                      </div>
+                      <table class="action_table">
+                        <tr>
+                          <th>
+                            <span class="game_title">Black Desert</span>
+                          </th>
+                          <td>
+                            <span class="game_info">144 предложений</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <span class="game_title">Black Books</span><span class="badge is-new">new</span>
+                          </th>
+                          <td>
+                            <span class="game_info">3 предложеня</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -144,25 +241,40 @@
               <div class="payment_pic">
                 <img src="assets/img/pic-qiwi.png" />
               </div>
+              <div class="payment_name">
+                Qiwi
+              </div>
             </li>
             <li class="payment_item">
               <div class="payment_pic">
                 <img src="assets/img/pic-yad.png" />
               </div>
-            </li>
-            <li class="payment_item">
-              <div class="payment_pic">
-                <img src="assets/img/pic-visa.png" />
+              <div class="payment_name">
+                Яндекс-деньги
               </div>
             </li>
             <li class="payment_item">
               <div class="payment_pic">
                 <img src="assets/img/pic-wm.png" />
               </div>
+              <div class="payment_name">
+                WebMoney
+              </div>
+            </li>
+            <li class="payment_item">
+              <div class="payment_pic">
+                <img src="assets/img/pic-visa.png" />
+              </div>
+              <div class="payment_name">
+                Visa
+              </div>
             </li>
             <li class="payment_item">
               <div class="payment_pic">
                 <img src="assets/img/pic-mc.png" />
+              </div>
+              <div class="payment_name">
+                MasterCard
               </div>
             </li>
           </ul>
@@ -229,12 +341,65 @@
             </div>
             <form class="form_subscribe">
               <div class="form-subscribe_wrap">
-                <input class="form-subscribe_field" name="subscribe_email" placeholder="E-mail" type="email" /><inputform-subscribe_btn src="assets/img/i-mail.svg" type="image"></inputform-subscribe_btn>
+                <input class="form-subscribe_field" name="subscribe_email" placeholder="E-mail" type="email" /><input class="form-subscribe_btn" title="Отправить" type="submit" value=" " />
               </div>
             </form>
           </div>
         </div>
       </footer>
+      <script src="assets/js/jquery-2.1.3.min.js"></script>
+      <script src="assets/js/jquery.tinycarousel.min.js"></script>
+      <script src="assets/js/scripts.min.js"></script>
+      <div class="popup_overlay">
+        <div class="popup">
+          <div class="popup_content">
+            <div class="popup_form">
+              <h4 class="popup_title">
+                Авторизуйтесь на сайте
+              </h4>
+              <div class="form">
+                <form action="POST">
+                  <div class="form_line">
+                    <label class="form_label" for="login">Логин</label><input class="form_field" id="login" type="email" />
+                  </div>
+                  <div class="form_line">
+                    <label class="form_label" for="pass">Пароль</label><input class="form_field" id="pass" type="password" />
+                  </div>
+                  <div class="form_end">
+                    <input class="btn_form" type="submit" value="Войти" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="divide">
+              или
+            </div>
+            <div class="popup_social">
+              <h4 class="popup_title">
+                Войдите с помощью социальных сетей
+              </h4>
+              <div class="socials">
+                <div class="social_btn is-vk">
+                  <span class="social-btn_icon is-vk"></span><span class="social-btn_text">Вконтакте</span>
+                </div>
+                <div class="social_btn is-fb">
+                  <span class="social-btn_icon is-fb"></span><span class="social-btn_text">Facebook</span>
+                </div>
+                <div class="social_btn is-ok">
+                  <span class="social-btn_icon is-ok"></span><span class="social-btn_text">Одноклассники</span>
+                </div>
+                <div class="social_btn is-twi">
+                  <span class="social-btn_icon is-twi"></span><span class="social-btn_text">Twitter</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup_alt">
+            <a class="popup_link" href="#">Регистрация</a><a class="popup_link" href="#">Забыли пароль?</a>
+          </div>
+          <div class="popup_close"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
 .payment {
-	background-color: #efefef;
-	padding: 25px 0 40px;
+	padding: 35px 0 40px;
+	background: linear-gradient( to top, rgba(0,0,0,.08) 0%, rgba(255,255,255,0.5) 100%) #fff;
 }
 
 .payment_list {
@@ -13,11 +13,29 @@
 
 .payment_item {
 	display: inline-block;
-	vertical-align: middle;
-	font-size: 14px;
-	margin-right: 20px;
+	vertical-align: top;
+	width: 125px;
+	font-size: 12px;
+	margin-right: 15px;
+	background-color: #fff;
+	border-radius: 0 0 4px 4px;
+	color: $nav-link;
+	font-weight: 700;
 
 	&:last-child {
 		margin-right: 0;
 	}
+}
+
+.payment_pic {
+	border-radius: 4px 4px 0 0;
+	background-color: #eee;
+	height: 75px;
+    line-height: 92px;
+    background: linear-gradient( to top, rgba(0,0,0,.08) 0%, rgba(255,255,255,0) 50%);
+}
+
+.payment_name {
+	height: 30px;
+	line-height: 30px;
 }

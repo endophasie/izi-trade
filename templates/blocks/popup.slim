@@ -1,0 +1,35 @@
+.popup_overlay
+	.popup
+		.popup_content
+			.popup_form
+				h4.popup_title Авторизуйтесь на сайте
+				.form
+					form action="POST"
+						.form_line
+							label.form_label for="login" Логин
+							input.form_field#login type="email"
+						.form_line
+							label.form_label for="pass" Пароль
+							input.form_field#pass type="password"
+						.form_end
+							input.btn_form type="submit" value="Войти"
+			.divide или
+			.popup_social
+				h4.popup_title Войдите с помощью социальных сетей
+				.socials
+					.social_btn.is-vk
+						span.social-btn_icon.is-vk
+						span.social-btn_text Вконтакте
+					.social_btn.is-fb
+						span.social-btn_icon.is-fb
+						span.social-btn_text Facebook
+					.social_btn.is-ok
+						span.social-btn_icon.is-ok
+						span.social-btn_text Одноклассники
+					.social_btn.is-twi
+						span.social-btn_icon.is-twi
+						span.social-btn_text Twitter
+		.popup_alt
+			a.popup_link href="#" Регистрация
+			a.popup_link href="#" Забыли пароль?
+		.popup_close
