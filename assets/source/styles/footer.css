@@ -65,8 +65,39 @@
 }
 
 .social_link {
-	color: #666;
+	color: #fff;
+	opacity: .5;
 	text-decoration: none;
+	transition: opacity 300ms ease;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.social_icon {
+	display: inline-block;
+	vertical-align: middle;
+
+	&.i-fb {
+		@mixin icon i-fb, 14px;
+	}
+	&.i-twi {
+		@mixin icon i-twi, 14px;
+	}
+	&.i-insta {
+		@mixin icon i-insta, 14px;
+	}
+	&.i-rss {
+		@mixin icon i-rss, 14px;
+	}
+}
+
+.social_text {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size: 12px;
 }
 
 .footer_title {
@@ -80,11 +111,7 @@
 .footer_info {
 	color: #666;
 	font-size: 12px;
-	margin-bottom: 12px;
-}
-
-.form_subscribe {
-
+	margin-bottom: 20px;
 }
 
 .form-subscribe_wrap {
