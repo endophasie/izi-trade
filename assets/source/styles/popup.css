@@ -1,0 +1,37 @@
+.popup_overlay {
+	position: fixed;
+	size: 100% 100vh;
+	max-height: 100vh;
+	background-color: #000.42;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+.popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	size: 580px 400px;
+	margin: -200px 0 0 -290px;
+	z-index: 11;
+	background-color: #fff;
+	box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.52);
+	padding: 33px 45px 15px;
+}
+
+.popup_close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	size: 20px;
+}
+
+.popup_title {
+	color: #9297a3;
+	font: 400 14px/18px $sans-serif;
+	text-align: center;
+	margin: 0 0 25px;
+	width: 60%;
+}
+
