@@ -27,14 +27,14 @@
 		}
 
 		.i-coins {
-			background-image: inline('../../img/i-coins-hov.png');
+			@mixin icon i-coins-hov, 25px;
 		}
 		.i-values {
 			@mixin icon i-values-hov, 25px;
 		}
 
 		.i-driver {
-			background-image: inline('../../img/i-driver-hov.png');
+			@mixin icon i-driver-hov, 25px;
 		}
 
 		.i-wannabuy {
@@ -63,10 +63,7 @@
 	margin: 0 auto 5px;
 
 	&.i-coins {
-		background: inline('../../img/i-coins.png') 0 0 no-repeat;
-		size: 25px;
-		background-size: 100% 100%;
-		transition: background 300ms ease;
+		@mixin icon i-coins, 25px;
 	}
 
 	&.i-values {
@@ -74,10 +71,7 @@
 	}
 
 	&.i-driver {
-		background: inline('../../img/i-driver.png') 0 0 no-repeat;
-		size: 25px;
-		background-size: 100% 100%;
-		transition: background 300ms ease;
+		@mixin icon i-driver, 25px;
 	}
 
 	&.i-wannabuy {
