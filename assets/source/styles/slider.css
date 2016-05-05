@@ -55,7 +55,10 @@
     position: absolute;
     top: 50%;
     z-index: 2;
+    cursor: pointer;
     margin-top: -25px;
+    background-repeat: no-repeat;
+    background-position: center center;
     transition: background-color 300ms ease;
 
     &:hover {
@@ -64,11 +67,11 @@
 
     &.prev {
 		left: 5%;
-		background: inline('../../img/i-arr-l.svg') center center no-repeat;
+		background-image: inline('../../img/i-arr-l.svg');
 	}
 	&.next {
 		right: 5%;
-		background: inline('../../img/i-arr-r.svg') center center no-repeat;
+		background-image: inline('../../img/i-arr-r.svg');
 	}
 }
 .slider .disable {

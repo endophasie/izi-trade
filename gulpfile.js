@@ -81,6 +81,7 @@ gulp.task('styles', function () {
     require('postcss-assets', { cachebuster: true }),
     require('postcss-color-alpha'),
     require('postcss-color-function'),
+    require('postcss-brand-colors'),
     require('postcss-inline-svg'),
     require('postcss-calc'),
     require('postcss-size'),

@@ -24,6 +24,14 @@
 		.i-logout {
 			@mixin icon i-logout-hov, 16px;
 		}
+
+		.i-question {
+			@mixin icon i-question-hov, 16px;
+		}
+
+		.i-message {
+			@mixin icon i-message-hov, 16px;
+		}
 	}
 
 	&.is-active {

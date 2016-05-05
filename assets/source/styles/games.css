@@ -85,13 +85,17 @@
 
 
 /* Tabs */
+.actions_content {
+	padding-top: 13px;
+	background-color: $bg-main.9;
+}
 
 .actions_viewport {
 	padding: 30px 0 80px;
 	width: 940px;
 	overflow: hidden;
 	position: relative;
-	height: 140vh;
+	height: 840px;
 }
 
 .actions_overview {
@@ -109,7 +113,7 @@
 
 .actions_menu {
 	clear: fix;
-	margin: 13px 0 15px;
+	margin: 0 0 15px;
 
 }
 .actions_types {
@@ -159,8 +163,48 @@
 	vertical-align: middle;
 }
 
-.action_game {
-	margin-bottom: 35px;
+.actions_grid {
+	max-width: 800px;
+	margin: 0 auto 35px;
+	position: relative;
+	text-align: left;
+	clear: fix;
+}
+
+.grid-item {
+  float: left;
+}
+
+.action-game_link {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	size: 100%;
+	line-height: 0;
+
+	&:hover {
+		.action-game_info {
+			opacity: 1;
+		}
+	}
+}
+
+.action-game_info {
+	opacity: 0;
+	position: absolute;
+	size: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: #000.42;
+	padding: 35px 20px 0;
+	text-align: left;
+	transition: opacity 300ms ease;
+}
+
+.action-game_title {
+	color: #fff;
+	font: 300 26px/40px $sans-serif;
 }
 
 .actions.is-cubes {

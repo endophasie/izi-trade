@@ -11,10 +11,10 @@ html, body {
 
 .master {
     font: 300 12px $sans-serif;
-    background-color: $bg-main;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 30%,rgba(255,255,255,0) 62%) $bg-main;
 }
 
 .main-content {
