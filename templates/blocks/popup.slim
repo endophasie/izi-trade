@@ -3,16 +3,7 @@
 		.popup_content
 			.popup_form
 				h4.popup_title Авторизуйтесь на сайте
-				.form
-					form action="POST"
-						.form_line
-							label.form_label for="login" Логин
-							input.form_field#login type="email"
-						.form_line
-							label.form_label for="pass" Пароль
-							input.form_field#pass type="password"
-						.form_end
-							input.btn_form type="submit" value="Войти"
+				include form_login
 			.divide или
 			.popup_social
 				h4.popup_title Войдите с помощью социальных сетей
