@@ -121,6 +121,7 @@
 	border-radius: 4px;
 	font-size: 0;
 	float: right;
+	margin-right: 25px;
 }
 
 .actions-type {
@@ -200,6 +201,7 @@
 	padding: 35px 20px 0;
 	text-align: left;
 	transition: opacity 300ms ease;
+    box-shadow: 2px 3.464px 25px 0px rgba(0, 0, 0, 1);
 }
 
 .action-game_title {

@@ -1537,6 +1537,7 @@ html, body {
 	border-radius: 4px;
 	font-size: 0;
 	float: right;
+	margin-right: 25px;
 }
 
 .actions-type {
@@ -1642,6 +1643,7 @@ html, body {
 	text-align: left;
 	-webkit-transition: opacity 300ms ease;
 	transition: opacity 300ms ease;
+    box-shadow: 2px 3.464px 25px 0px rgba(0, 0, 0, 1);
 }
 
 .action-game_title {
