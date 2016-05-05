@@ -469,9 +469,15 @@ html, body {
 }
 
 .section-title-inner {
-    font: 700 22px/2 'Open Sans', Helvetica, Arial, sans-serif;
+    font: 700 22px/1.4 'Open Sans', Helvetica, Arial, sans-serif;
     color: #363636;
     display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.section-title-inner:only-child {
+  line-height: 2;
 }
 
 .section-title-inner:only-child:after {

@@ -32,16 +32,22 @@ html, body {
 }
 
 .section-title-inner {
-    font: 700 22px/2 $sans-serif;
+    font: 700 22px/1.4 $sans-serif;
     color: #363636;
     display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
 
-    &:only-child:after {
-        content: '';
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-        border-bottom: 1px solid $color-active;
+    &:only-child {
+        line-height: 2;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            border-bottom: 1px solid $color-active;
+        }
     }
 }
 
