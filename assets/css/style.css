@@ -1423,6 +1423,7 @@ html, body {
   background-size: 100% 100%;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
+  height: 32px;
 }
 
 .actions_link {
@@ -1491,6 +1492,7 @@ html, body {
   background-size: 100% 100%;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
+  height: 32px;
 }
 
 

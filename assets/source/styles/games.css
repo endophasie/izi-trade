@@ -43,6 +43,7 @@
 
 		.i-onetime {
 			@mixin icon i-onetime-hov, 25px;
+			height: 32px;
 		}
 	}
 }
@@ -85,6 +86,7 @@
 
 	&.i-onetime {
 		@mixin icon i-onetime, 25px;
+		height: 32px;
 	}
 }
 
