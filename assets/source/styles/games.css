@@ -10,9 +10,9 @@
 
 .actions_item {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 14px;
 	height: 100%;
-	padding: 5px 15px 0;
+	padding: 0 15px;
 	opacity: .9;
 	cursor: pointer;
 	transition: background-color 300ms ease;
@@ -27,14 +27,14 @@
 		}
 
 		.i-coins {
-			@mixin icon i-coins-hov, 25px;
+			@mixin icon i-coins-hov, 28px;
 		}
 		.i-values {
-			@mixin icon i-values-hov, 25px;
+			@mixin icon i-values-hov, 28px;
 		}
 
 		.i-driver {
-			@mixin icon i-driver-hov, 25px;
+			@mixin icon i-driver-hov, 28px;
 		}
 
 		.i-wannabuy {
@@ -51,27 +51,32 @@
 	display: block;
 	size: 100%;
 	text-decoration: none;
+	position: relative;
 }
 
 .actions_text {
+	position: relative;
+	top: 34px;
 	color: #666;
 	transition: color 300ms ease;
 }
 
 .actions_icon {
-	display: block;
-	margin: 0 auto 5px;
+	position: absolute;
+	top: 5px;
+    left: 50%;
+    margin-left: -13px;
 
 	&.i-coins {
-		@mixin icon i-coins, 25px;
+		@mixin icon i-coins, 28px;
 	}
 
 	&.i-values {
-		@mixin icon i-values, 25px;
+		@mixin icon i-values, 28px;
 	}
 
 	&.i-driver {
-		@mixin icon i-driver, 25px;
+		@mixin icon i-driver, 28px;
 	}
 
 	&.i-wannabuy {
@@ -121,7 +126,7 @@
 	border-radius: 4px;
 	font-size: 0;
 	float: right;
-	margin-right: 25px;
+	margin-right: 40px;
 }
 
 .actions-type {
@@ -165,7 +170,7 @@
 }
 
 .actions_grid {
-	max-width: 800px;
+	max-width: 860px;
 	margin: 0 auto 35px;
 	position: relative;
 	text-align: left;
