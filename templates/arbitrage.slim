@@ -1,0 +1,24 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	section.section-content
+            		h2.section_title
+            			span.section-title-inner Подать заявку
+                        span.section-title-slogan  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aspernatur ipsa
+            		.form.is-page-form
+						form action="POST"
+							.form_line
+                                input.form_field.is-half type="email" placeholder="E-mail"
+                                input.form_field.is-half type="text" placeholder="Тема"
+							.form_line
+								textarea.form_field.is-textarea placeholder="Описание работы"
+							.form_end
+								input.form_btn type="submit" value="Отправить"
+            include footer
