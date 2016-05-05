@@ -1,10 +1,16 @@
 .nav {
 	background-color: #fff;
 	height: 40px;
+
+	&.is-inner {
+		height: 50px;
+		box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.28);
+		position: relative;
+	}
 }
 
 .nav_list {
-	size: 800px 100%;
+	size: 900px 100%;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0;
@@ -24,6 +30,10 @@
 	font: 700 12px/40px $sans-serif;
 	text-transform: uppercase;
 	position: relative;
+
+	.is-inner & {
+		line-height: 50px;
+	}
 }
 
 .nav_link {
