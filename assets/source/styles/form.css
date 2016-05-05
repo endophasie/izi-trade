@@ -31,6 +31,21 @@
 	text-indent: 12px;
 	font: 400 12px $sans-serif;
 	color: #000;
+
+	&.is-textarea {
+		min-height: 150px;
+		text-indent: 0;
+		padding: 5px 12px;
+	    resize: vertical;
+	}
+
+	&.is-half {
+		width: 46.6%;
+
+		&:first-child {
+			margin-right: 20px;
+		}
+	}
 }
 
 .form_btn {

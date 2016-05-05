@@ -1,0 +1,25 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content
+            		h2.section_title
+            			span.section-title-inner Разовая продажа
+                        span.section-title-slogan  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aspernatur ipsa
+            		.form.is-page-form
+						form action="POST"
+							.form_line
+                                input.form_field.is-half type="text" placeholder="Наименование"
+								input.form_field.is-half type="text" placeholder="Стоимость"
+							.form_line
+								textarea.form_field.is-textarea placeholder="Подробное описание"
+							.form_end
+								input.form_btn type="submit" value="Создать"
+            include footer
