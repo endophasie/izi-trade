@@ -30,3 +30,22 @@ html, body {
     margin: 0 0 30px;
     text-align: center;
 }
+
+.section-title-inner {
+    font: 700 22px/2 $sans-serif;
+    color: #363636;
+    display: inline-block;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px solid $color-active;
+    }
+}
+
+.section-content {
+    background-color: #fafafa;
+    padding: 40px 0 80px;
+}

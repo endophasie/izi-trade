@@ -1,3 +1,11 @@
+.form {
+
+	&.is-page-form {
+		width: 300px;
+		margin: 0 auto;
+	}
+}
+
 .form_line {
 	margin-bottom: 15px;
 }

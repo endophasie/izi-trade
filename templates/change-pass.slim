@@ -1,0 +1,26 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content
+            		h2.section_title
+            			span.section-title-inner Сменить пароль
+            		.form.is-page-form
+						form action="POST"
+							.form_line
+								input.form_field type="password" placeholder="Старый пароль"
+							.form_line
+								input.form_field type="password" placeholder="Новый пароль"
+							/ .form_line
+							/ 	input.form_field type="email" placeholder="E-mail"
+							.form_end
+								input.form_btn type="submit" value="Сменить"
+
+            include footer
