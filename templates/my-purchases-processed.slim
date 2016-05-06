@@ -1,0 +1,48 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content
+					.history
+						h2.section_title
+            				span.section-title-inner Мои покупки
+        				table.table_text
+        					thead
+        						tr
+        							th заказ
+        							th описание
+        							th продавец
+        							th сумма
+        							th статус
+							tbody
+								tr
+									td
+										span.table-text_text №1 от 12.03.2015
+									td
+										span.table-text_text Игра: World of Warcraft<br>Товар: Золото<br>Сервер: AlexSuperServer<br>Количество: 999кк
+									td
+										span.table-text_text endophasie
+									td
+										span.table-text_text 9999 руб.
+									td
+										span.table-text_text В обработке
+								tr
+									td
+										span.table-text_text №2 от 12.03.2015
+									td
+										span.table-text_text Игра: World of Warcraft<br>Товар: Золото
+									td
+										span.table-text_text endophasie
+									td
+										span.table-text_text 544.40 руб.
+									td
+										span.table-text_text Требуется ответ
+
+        	include footer
