@@ -1382,6 +1382,60 @@ html, body {
 	height: 14px;
 	background-size: 100% 100%;
 }
+
+.table-text_name {
+	display: inline-block;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 100px;
+}
+
+.table-text_comm {
+	font-weight: 400;
+	font-size: 12px;
+	display: block;
+}
+
+.i-status {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	vertical-align: text-top;
+	margin-left: 7px;
+}
+
+.i-status.is-online {
+  background-color: #30d25e;
+}
+
+.i-status.is-offline {
+  background-color: #f00;
+}
+
+.i-confirm {
+	display: block;
+	background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22ok%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2219.969%22%20height%3D%2219.968%22%20viewBox%3D%220%200%2019.969%2019.968%22%3E%20%20%3Cdefs%3E%20%20%20%20%3Cstyle%3E%20%20%20%20%20%20.cls-1%20%7B%20%20%20%20%20%20%20%20fill%3A%20%23ff5012%3B%20%20%20%20%20%20%7D%20%20%20%20%20%20.cls-2%20%7B%20%20%20%20%20%20%20%20fill%3A%20%23fff%3B%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%20%20%20%20%20%20%7D%20%20%20%20%3C%2Fstyle%3E%20%20%3C%2Fdefs%3E%20%20%3Cellipse%20class%3D%22cls-1%22%20cx%3D%229.985%22%20cy%3D%229.984%22%20rx%3D%229.985%22%20ry%3D%229.984%22%2F%3E%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22M927.881%2C251.808l-0.932.936%2C3%2C3%2C6.674-6.674-0.935-.935-5.739%2C5.742Zm8.075%2C1.268a5.338%2C5.338%2C0%2C1%2C1-5.338-5.337%2C5.239%2C5.239%2C0%2C0%2C1%2C1.47.2l1.066-1.069a8.129%2C8.129%2C0%2C0%2C0-2.536-.466%2C6.674%2C6.674%2C0%2C1%2C0%2C6.674%2C6.674h-1.336Zm0%2C0%22%20transform%3D%22translate%28-921%20-243.094%29%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 100% 100%;
+	-webkit-transition: background 300ms ease;
+	transition: background 300ms ease;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.i-cancel {
+	display: block;
+	background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22cancel%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2219.969%22%20height%3D%2219.969%22%20viewBox%3D%220%200%2019.969%2019.969%22%3E%20%20%3Cdefs%3E%20%20%20%20%3Cstyle%3E%20%20%20%20%20%20.cls-1%20%7B%20%20%20%20%20%20%20%20fill%3A%20%236c6c6c%3B%20%20%20%20%20%20%7D%20%20%20%20%20%20.cls-2%20%7B%20%20%20%20%20%20%20%20fill%3A%20%23fff%3B%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%20%20%20%20%20%20%7D%20%20%20%20%3C%2Fstyle%3E%20%20%3C%2Fdefs%3E%20%20%3Cellipse%20class%3D%22cls-1%22%20cx%3D%229.985%22%20cy%3D%229.984%22%20rx%3D%229.985%22%20ry%3D%229.984%22%2F%3E%20%20%3Cpath%20class%3D%22cls-2%22%20d%3D%22M936.466%2C282.686l-1.122-1.122-4.48%2C4.484-4.485-4.484-1.122%2C1.122%2C4.484%2C4.485-4.484%2C4.48%2C1.122%2C1.122%2C4.485-4.484%2C4.48%2C4.484%2C1.122-1.122-4.484-4.48Zm0%2C0%22%20transform%3D%22translate%28-921%20-277.031%29%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 100% 100%;
+	-webkit-transition: background 300ms ease;
+	transition: background 300ms ease;
+	cursor: pointer;
+}
 .text_list {
 	padding: 0;
 	margin: 0 0 30px;
