@@ -1403,6 +1403,7 @@ html, body {
 
 .i-delete {
 	display: inline-block;
+	cursor: pointer;
 	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAAuElEQVQokc3RLW4CQRwF8B9kBQIEBIFCVBJEBYITVDa1dRUETtCA5gQIZM9RUYvkCLSmClUcWweCEf9slsXyzOR9Zd5kaqeXjgLG+Ax8hWUMZJjgKWhdtAN/xTDwY4YjDkE8YFe8PiCvpXlNdPBbEe6mZft6Ep6xqShwedcH1EvMEX7QSqH3YqCs1MBD8npp9s3STdx5KSvRvjFDjjX+rpX+XT54Gry3dPbxiAH2sfSFLeYVq3Is4AwRpBzct9nc+gAAAABJRU5ErkJggg==') center center no-repeat;
 	width: 13px;
 	height: 14px;
