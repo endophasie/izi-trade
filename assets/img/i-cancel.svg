@@ -1,0 +1,16 @@
+<svg id="cancel" xmlns="http://www.w3.org/2000/svg" width="19.969" height="19.969" viewBox="0 0 19.969 19.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6c6c6c;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-1" cx="9.985" cy="9.984" rx="9.985" ry="9.984"/>
+  <path class="cls-2" d="M936.466,282.686l-1.122-1.122-4.48,4.484-4.485-4.484-1.122,1.122,4.484,4.485-4.484,4.48,1.122,1.122,4.485-4.484,4.48,4.484,1.122-1.122-4.484-4.48Zm0,0" transform="translate(-921 -277.031)"/>
+</svg>
