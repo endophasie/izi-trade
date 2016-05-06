@@ -1,0 +1,88 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	section.section-content.is-white
+            		.section_form
+	            		h2.section_title
+	            			span.section-title-inner Привязать кошелек
+	        			.form.is-page-form
+							form action="POST"
+								.form_line
+									select.form_select.is-half
+										option disabled="disabled" selected="selected" Система кошелька
+										option value="Яндекс Кошелек" Яндекс Кошелек
+										option value="WebMoney" WebMoney
+									input.form_field.is-half type="text" placeholder="Номер кошелька"
+								.form_end
+									input.form_btn type="submit" value="Добавить"
+					.history
+						h2.section_title
+            				span.section-title-inner Список привязанных кошельков
+        				table.table_text
+        					thead
+        						tr
+        							th тип кошелька
+        							th номер
+        							th
+							tbody
+								tr
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text 12345678
+									td
+										span.i-delete
+								tr
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text 12345678
+									td
+										span.i-delete
+					.history
+						h2.section_title
+            				span.section-title-inner История изменений
+        				table.table_text
+        					thead
+        						tr
+        							th тип кошелька
+        							th номер
+        							th тип изменения
+        							th дата
+							tbody
+								tr
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text 12345678
+									td
+										span.table-text_text Изменен
+									td
+										span.table-text_text 02.02.2001
+								tr
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text 12345678
+									td
+										span.table-text_text Удален
+									td
+										span.table-text_text 02.02.2001
+								tr
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text 12345678
+									td
+										span.table-text_text Изменен
+									td
+										span.table-text_text 02.02.2001
+
+        	include footer

@@ -520,6 +520,10 @@ html, body {
     margin-bottom: 80px;
 }
 
+.history {
+    margin-bottom: 20px;
+}
+
 .header {
 	height: 80px;
 }
@@ -1135,11 +1139,13 @@ html, body {
 	position: absolute;
 	right: 10px;
 	top: 10px;
+	cursor: pointer;
+	background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215.875%22%20height%3D%2211.875%22%20viewBox%3D%220%200%2015.875%2011.875%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%2365666C%3Bfill-rule%3Aevenodd%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M-.001-.008v2.115l7.937%206.477%207.938-6.477V-.008H-.001zm14.552%201.454l-6.615%205.42-6.614-5.42v-.132h13.229v.132zm0%200v9.121H1.319V5.275h-1.32v6.609h15.875V5.275h-1.323v5.287zm0%200%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
 	width: 25px;
 	height: 25px;
-	background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2050%22%3E%3Cpath%20d%3D%22M37.304%2011.282l1.414%201.414-26.022%2026.02-1.414-1.413z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M12.696%2011.282l26.022%2026.02-1.414%201.415-26.022-26.02z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
-	background-size: contain;
-	cursor: pointer;
+	background-size: 100% 100%;
+	-webkit-transition: background 300ms ease;
+	transition: background 300ms ease;
 }
 
 .popup_title {
@@ -1362,6 +1368,14 @@ html, body {
 }
 .table_text tr:nth-child(even) td {
   background-color: #d9d9d9;
+}
+
+.i-delete {
+	display: inline-block;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAAuElEQVQokc3RLW4CQRwF8B9kBQIEBIFCVBJEBYITVDa1dRUETtCA5gQIZM9RUYvkCLSmClUcWweCEf9slsXyzOR9Zd5kaqeXjgLG+Ax8hWUMZJjgKWhdtAN/xTDwY4YjDkE8YFe8PiCvpXlNdPBbEe6mZft6Ep6xqShwedcH1EvMEX7QSqH3YqCs1MBD8npp9s3STdx5KSvRvjFDjjX+rpX+XT54Gry3dPbxiAH2sfSFLeYVq3Is4AwRpBzct9nc+gAAAABJRU5ErkJggg==') center center no-repeat;
+	width: 13px;
+	height: 14px;
+	background-size: 100% 100%;
 }
 .text_list {
 	padding: 0;

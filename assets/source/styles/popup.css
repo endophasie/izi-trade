@@ -46,10 +46,8 @@
 	position: absolute;
 	right: 10px;
 	top: 10px;
-	size: 25px;
-	background: inline('../../img/i-close.svg') center center no-repeat;
-	background-size: contain;
 	cursor: pointer;
+	@mixin icon i-message, 25px;
 }
 
 .popup_title {

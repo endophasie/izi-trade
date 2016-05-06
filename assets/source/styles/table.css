@@ -21,3 +21,8 @@
 	}
 }
 
+.i-delete {
+	display: inline-block;
+	@mixin pic i-delete, 14px;
+}
+
