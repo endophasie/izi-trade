@@ -44,7 +44,7 @@ html, body {
         &:after {
             content: '';
             display: block;
-            width: 80%;
+            width: 120px;
             margin: 0 auto;
             border-bottom: 1px solid $color-active;
         }
@@ -69,4 +69,12 @@ html, body {
 .section-content {
     background-color: #fafafa;
     padding: 40px 0 80px;
+
+    &.is-white {
+        background-color: #fff;
+    }
+}
+
+.section_form {
+    margin-bottom: 80px;
 }

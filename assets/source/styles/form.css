@@ -2,7 +2,7 @@
 
 	&.is-page-form {
 		width: 300px;
-		margin: 0 auto;
+		margin: 0 auto 30px;
 	}
 }
 
@@ -38,6 +38,19 @@
 		padding: 5px 12px;
 	    resize: vertical;
 	}
+
+	&.is-half {
+		width: 46.6%;
+
+		&:first-child {
+			margin-right: 20px;
+		}
+	}
+}
+
+.form_select {
+	size: 100% 32px;
+	border: 2px solid #e5e5e5;
 
 	&.is-half {
 		width: 46.6%;

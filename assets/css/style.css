@@ -483,7 +483,7 @@ html, body {
 .section-title-inner:only-child:after {
   content: '';
   display: block;
-  width: 80%;
+  width: 120px;
   margin: 0 auto;
   border-bottom: 1px solid #ff5012;
 }
@@ -506,6 +506,14 @@ html, body {
 .section-content {
     background-color: #fafafa;
     padding: 40px 0 80px;
+}
+
+.section-content.is-white {
+  background-color: #fff;
+}
+
+.section_form {
+    margin-bottom: 80px;
 }
 
 .header {
@@ -1258,7 +1266,7 @@ html, body {
 }
 .form.is-page-form {
   width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .form_line {
@@ -1304,6 +1312,20 @@ html, body {
   margin-right: 20px;
 }
 
+.form_select {
+	width: 100%;
+	height: 32px;
+	border: 2px solid #e5e5e5;
+}
+
+.form_select.is-half {
+  width: 46.6%;
+}
+
+.form_select.is-half:first-child {
+  margin-right: 20px;
+}
+
 .form_btn {
 	font: 400 14px 'Open Sans', Helvetica, Arial, sans-serif;
 	padding: 0 25px;
@@ -1317,6 +1339,25 @@ html, body {
 
 .form_btn:hover, .form_btn:focus {
   background-color: rgba(28, 32, 58, 0.9);
+}
+.table_text {
+	width: 100%;
+}
+.table_text th {
+  height: 45px;
+  text-transform: uppercase;
+  background-color: #fafafa;
+  box-shadow: 2px 1.732px 2px 0px rgba(0, 0, 0, 0.28);
+}
+.table_text td {
+  text-align: center;
+  height: 90px;
+  vertical-align: middle;
+  font-weight: 600;
+  width: 160px;
+}
+.table_text tr:nth-child(even) td {
+  background-color: #d9d9d9;
 }
 
 .btn {

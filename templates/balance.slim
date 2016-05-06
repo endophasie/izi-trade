@@ -1,0 +1,73 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	section.section-content.is-white
+            		.section_form
+	            		h2.section_title
+	            			span.section-title-inner Баланс: 1 234 руб.
+	        			.form.is-page-form
+							form action="POST"
+								.form_line
+									select.form_select.is-half
+										option disabled="disabled" selected="selected" Способ вывода
+										option value="Яндекс Кошелек" Яндекс Кошелек
+										option value="WebMoney" WebMoney
+									input.form_field.is-half type="text" placeholder="Сумма"
+								.form_end
+									input.form_btn type="submit" value="Запрос на вывод"
+					.history
+						h2.section_title
+            				span.section-title-inner История операций
+        				table.table_text
+        					thead
+        						tr
+        							th дата
+        							th описание
+        							th валюта
+        							th сумма
+							tbody
+								tr
+									td
+										span.table-text_text 02.02.2001
+									td
+										span.table-text_text Вывод средств с кошелька №12345678
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text -123 руб.
+								tr
+									td
+										span.table-text_text 02.02.2001
+									td
+										span.table-text_text Вывод средств с кошелька №12345678
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text -123 руб.
+								tr
+									td
+										span.table-text_text 02.02.2001
+									td
+										span.table-text_text Вывод средств с кошелька №12345678
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text -123 руб.
+								tr
+									td
+										span.table-text_text 02.02.2001
+									td
+										span.table-text_text Вывод средств с кошелька №12345678
+									td
+										span.table-text_text WebMoney
+									td
+										span.table-text_text -123 руб.
+
+        	include footer
