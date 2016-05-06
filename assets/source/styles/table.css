@@ -26,11 +26,6 @@
 	}
 }
 
-.i-delete {
-	display: inline-block;
-	@mixin pic i-delete, 14px;
-}
-
 .table-text_name {
 	display: inline-block;
 	vertical-align: middle;
@@ -43,6 +38,22 @@
 	font-weight: 400;
 	font-size: 12px;
 	display: block;
+}
+
+.table-text_link {
+	color: #9b9999;
+	display: block;
+	transition: color 300ms ease;
+
+	&:hover {
+		text-decoration: none;
+		color: $color-active;
+	}
+}
+
+.i-delete {
+	display: inline-block;
+	@mixin pic i-delete, 14px;
 }
 
 .i-status {
