@@ -1,0 +1,15 @@
+.text_list {
+	padding: 0;
+	margin: 0 0 30px;
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}
+
+.text-list_item {
+	margin-bottom: 10px;
+}
+
+.text-list_text {
+	padding-right: 5px;
+}

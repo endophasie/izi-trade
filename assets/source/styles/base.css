@@ -12,6 +12,7 @@
 @import 'popup';
 @import 'form';
 @import 'table';
+@import 'text';
 
 @import 'btn';
 @import 'badge';

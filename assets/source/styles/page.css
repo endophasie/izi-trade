@@ -38,6 +38,10 @@ html, body {
     width: 50%;
     margin-bottom: 20px;
 
+    .popup & {
+        width: 80%;
+    }
+
     &:only-child {
         line-height: 2;
 
