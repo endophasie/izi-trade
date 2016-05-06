@@ -1358,6 +1358,8 @@ html, body {
   text-transform: uppercase;
   background-color: #fafafa;
   box-shadow: 2px 1.732px 2px 0px rgba(0, 0, 0, 0.28);
+  position: relative;
+  z-index: 2;
 }
 .table_text td {
   text-align: center;
@@ -1368,6 +1370,9 @@ html, body {
 }
 .table_text tr:nth-child(even) td {
   background-color: #d9d9d9;
+}
+.table_text tr:nth-child(odd) td {
+  background-color: #fff;
 }
 
 .i-delete {

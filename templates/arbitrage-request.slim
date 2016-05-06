@@ -1,0 +1,48 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content
+					.history
+						h2.section_title
+            				span.section-title-inner Мои заявки
+        				table.table_text
+        					thead
+        						tr
+        							th ID
+        							th Тема
+        							th дата
+        							th последнее редактирование
+        							th статус
+							tbody
+								tr
+									td
+										span.table-text_text 123
+									td
+										span.table-text_text Не получается оформить
+									td
+										span.table-text_text 02.02.2001
+									td
+										span.table-text_text 2 дня назад
+									td
+										span.table-text_text Открыт
+								tr
+									td
+										span.table-text_text 1234
+									td
+										span.table-text_text Не получается оформить
+									td
+										span.table-text_text 02.02.2001
+									td
+										span.table-text_text 3 дня назад
+									td
+										span.table-text_text Требуется ответ
+
+        	include footer
