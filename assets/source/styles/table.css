@@ -72,3 +72,29 @@
 	@mixin icon i-cancel, 20px;
 	cursor: pointer;
 }
+
+.i-edit {
+	display: block;
+	cursor: pointer;
+	@mixin icon i-edit, 16px;
+}
+
+.i-edit {
+	display: block;
+	cursor: pointer;
+	@mixin icon i-edit, 16px;
+	margin-bottom: 7px;
+}
+
+.i-pause {
+	display: block;
+	cursor: pointer;
+	@mixin icon i-pause, 16px;
+	margin-bottom: 7px;
+}
+
+.i-not {
+	display: block;
+	cursor: pointer;
+	@mixin icon i-not, 16px;
+}
