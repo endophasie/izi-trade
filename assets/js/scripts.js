@@ -20,6 +20,11 @@ $(document).ready(function() {
 
     });
 
+    $('#profile-feedback').tinycarousel({
+        bullets  : true,
+        buttons   : false
+	});
+
     /*$('.grid').isotope({
   		itemSelector: '.grid-item'
 	});*/
