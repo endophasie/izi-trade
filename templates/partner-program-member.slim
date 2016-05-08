@@ -1,0 +1,77 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content.is-white
+            		.profile_info
+            			h2.section_title.is-profile
+            				span.section-title-inner Endophasie
+            				span.section-title-slogan Количество приглашенных/зарегистрированных: 14/88
+    					.user-info.profile-info_text
+    						p Ваша реферальная ссылка:
+    						p
+    							b http://izi-trade.ru/ref/fjsrp783
+						.request-info
+							.request-info_text 1234 руб.
+							.request-info_wrap
+								a.form_btn href="#" Запрос на вывод
+				section.section-content
+					.history
+						h2.section_title
+            				span.section-title-inner Зарегистрированные пользователи
+        				table.table_text
+        					thead
+        						tr
+        							th логин
+        							th статус
+        							th дата регистрации
+							tbody
+								tr
+									td
+										span.table-text_text SuperAlex128
+									td
+										span.table-text_text Активирован
+									td
+										span.table-text_text 21.04.2015
+								tr
+									td
+										span.table-text_text SuperAlex128
+									td
+										span.table-text_text Активирован
+									td
+										span.table-text_text 21.04.2015
+					.history
+						h2.section_title
+            				span.section-title-inner История покупок
+        				table.table_text
+        					thead
+        						tr
+        							th дата
+        							th описание
+        							th сумма
+							tbody
+								tr
+									td
+										span.table-text_text 21.04.2015
+									td
+										span.table-text_text Коммисия за заказ №1234
+											br Пользователь: Alex69
+									td
+										span.table-text_text 1,23 руб.
+								tr
+									td
+										span.table-text_text 21.04.2015
+									td
+										span.table-text_text Коммисия за заказ №1234
+											br Пользователь: Alex69
+									td
+										span.table-text_text 1,23 руб.
+
+        	include footer

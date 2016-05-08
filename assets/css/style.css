@@ -519,6 +519,10 @@ html, body {
   border-bottom: 1px solid #ff5012;
 }
 
+.is-profile .section-title-slogan:after {
+  margin-top: 20px;
+}
+
 .section-content {
     background-color: #fafafa;
     padding: 40px 0 80px;
@@ -2171,7 +2175,7 @@ html, body {
 	display: inline-block;
 	font-size: 12px;
 	font-weight: 600;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 .section-message_link:hover .section-message_text, .section-message_link:focus .section-message_text {
   border-bottom-color: transparent;
@@ -2209,6 +2213,36 @@ html, body {
 
 .user-info b {
   color: #000;
+}
+
+.profile-info_text {
+	padding-top: 20px;
+}
+
+.profile-info_text:after {
+  content: '';
+  display: block;
+  width: 120px;
+  margin: 20px auto;
+  border-bottom: 1px solid #ff5012;
+}
+
+.request-info {
+	text-align: center;
+}
+
+.request-info .form_btn {
+  line-height: 38px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.request-info_text {
+	color: #363636;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 10px;
 }
 .feedbacks:after {
   content: '';

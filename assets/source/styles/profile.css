@@ -16,7 +16,7 @@
 	display: inline-block;
 	font-size: 12px;
 	font-weight: 600;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 
 	&:hover {
 		.section-message_text {
@@ -52,4 +52,34 @@
 	b {
 		color: $base;
 	}
+}
+
+.profile-info_text {
+	padding-top: 20px;
+
+	&:after {
+        content: '';
+        display: block;
+        width: 120px;
+        margin: 20px auto;
+        border-bottom: 1px solid $color-active;
+    }
+}
+
+.request-info {
+	text-align: center;
+
+	.form_btn {
+		line-height: 38px;
+		border-radius: 4px;
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+
+.request-info_text {
+	color: #363636;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 10px;
 }
