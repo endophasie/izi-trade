@@ -766,7 +766,8 @@ html, body {
 .actions_list.is-fixed {
   position: fixed;
   left: 0;
-  top: 100px;
+  top: 155px;
+  z-index: 999;
   width: auto;
   height: auto;
 }
@@ -848,6 +849,10 @@ html, body {
   position: relative;
 }
 
+.is-fixed .actions_item.is-active {
+  border-bottom: 0;
+}
+
 .actions_link {
 	display: block;
 	width: 100%;
@@ -864,6 +869,7 @@ html, body {
   position: absolute;
   width: auto;
   background-color: #fff;
+  border-bottom: 1px solid #1c203a;
 }
 
 .actions_text {
