@@ -55,6 +55,13 @@
 	}
 }
 
+.table-text_text {
+
+	&.is-left {
+		text-align: left;
+	}
+}
+
 .i-delete {
 	display: inline-block;
 	cursor: pointer;

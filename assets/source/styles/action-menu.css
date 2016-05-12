@@ -8,9 +8,9 @@
 	text-align: center;
 
 	&.is-fixed {
-		position: absolute;
+		position: fixed;
 		left: 0;
-		top: 50%;
+		top: 100px;
 		size: auto;
 	}
 }

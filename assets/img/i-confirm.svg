@@ -1,16 +1,1 @@
-<svg id="ok" xmlns="http://www.w3.org/2000/svg" width="19.969" height="19.968" viewBox="0 0 19.969 19.968">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #ff5012;
-      }
-
-      .cls-2 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <ellipse class="cls-1" cx="9.985" cy="9.984" rx="9.985" ry="9.984"/>
-  <path class="cls-2" d="M927.881,251.808l-0.932.936,3,3,6.674-6.674-0.935-.935-5.739,5.742Zm8.075,1.268a5.338,5.338,0,1,1-5.338-5.337,5.239,5.239,0,0,1,1.47.2l1.066-1.069a8.129,8.129,0,0,0-2.536-.466,6.674,6.674,0,1,0,6.674,6.674h-1.336Zm0,0" transform="translate(-921 -243.094)"/>
-</svg>
+<svg id="ok" xmlns="http://www.w3.org/2000/svg" width="19.969" height="19.968" viewBox="0 0 19.969 19.968"><defs><style>.cls-1{fill:#ff5012}.cls-2{fill:#fff;fill-rule:evenodd}</style></defs><ellipse class="cls-1" cx="9.985" cy="9.984" rx="9.985" ry="9.984"/><path class="cls-2" d="M927.881 251.808l-.932.936 3 3 6.674-6.674-.935-.935-5.739 5.742zm8.075 1.268a5.338 5.338 0 1 1-5.338-5.337 5.239 5.239 0 0 1 1.47.2l1.066-1.069a8.129 8.129 0 0 0-2.536-.466 6.674 6.674 0 1 0 6.674 6.674h-1.336zm0 0" transform="translate(-921 -243.094)"/></svg>

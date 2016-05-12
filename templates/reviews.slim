@@ -1,0 +1,28 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content
+					.history
+						h2.section_title.is-simple
+            				span.section-title-inner Наши клиенты <span class="is-marked"> любят</span> нас
+            				span.section-title-slogan  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta totam dolorem, beatae dolorum rem recusandae voluptates
+
+						include feedback
+				section.section-content.is-white
+					.section_form
+						h2.section_title.is-simple Отзыв
+    					form action=""
+    						.form_line
+								textarea.form_field.is-textarea placeholder="Отзыв"
+							.form_end.request-info
+								input.form_btn type="submit" value="Отправить"
+
+        	include footer

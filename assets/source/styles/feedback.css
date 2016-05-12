@@ -21,9 +21,12 @@
 }
 
 .feedback_slide {
-	size: 760px 400px;
 	font-size: 0;
-	float: left;
+
+	&.slide {
+		float: left;
+		size: 760px 400px;
+	}
 }
 
 .feedback_nav {

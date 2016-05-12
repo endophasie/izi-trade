@@ -21,3 +21,7 @@ $sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
 	size: size('../../img/$name.png');
 	background-size: 100% 100%;
 }
+
+.is-marked {
+	color: $color-active;
+}
