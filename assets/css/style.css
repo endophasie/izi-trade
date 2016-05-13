@@ -771,6 +771,12 @@ html, body {
   width: auto;
   height: auto;
 }
+@media (max-height: 700px) {
+
+  .actions_list.is-fixed {
+    position: absolute;
+  }
+}
 
 .actions_item {
 	display: inline-block;

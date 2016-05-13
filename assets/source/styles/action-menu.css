@@ -13,6 +13,10 @@
 		top: 155px;
 		z-index: 999;
 		size: auto;
+
+		@media (height <= 700px) {
+			position: absolute;
+		}
 	}
 }
 
