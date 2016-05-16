@@ -13,6 +13,14 @@
     align-self: flex-end;
 	background-color: #fff;
 	padding-bottom: 15px;
+
+	&.is-only {
+		width: 80%;
+		height: 300px;
+		overflow-y: auto;
+		margin: 0 auto;
+		padding-bottom: 0;
+	}
 }
 
 .chat-actions {

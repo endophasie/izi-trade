@@ -2533,6 +2533,14 @@ html, body {
 	padding-bottom: 15px;
 }
 
+.chat.is-only {
+  width: 80%;
+  height: 300px;
+  overflow-y: auto;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
 .chat-actions {
 	text-align: center;
 }
