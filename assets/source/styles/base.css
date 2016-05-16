@@ -13,6 +13,7 @@
 @import 'form';
 @import 'table';
 @import 'text';
+@import 'message';
 
 @import 'btn';
 @import 'badge';
@@ -23,3 +24,4 @@
 @import 'payment';
 @import 'profile';
 @import 'feedback';
+@import 'messages';

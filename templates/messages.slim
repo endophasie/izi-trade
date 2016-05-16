@@ -1,0 +1,37 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content.is-messages
+            	section.section-content.is-messages
+            		.messages
+            			.messages-all
+            				.messages-body
+            					include message
+            					include message
+            					include message
+            					include message
+            					include message
+            					include message
+						.chat
+							.chat-content
+								.chat-content_read
+									include message
+								.chat-content_write
+									form.form_simple
+										.form-simple_wrap
+											textarea.form_field.is-textarea-message placeholder="Написать сообщение"
+											input.form_btn.is-simple type="submit" value="Отправить"
+							.chat-actions
+								a.chat-actions_link href="#"
+									span.chat-actions_icon.is-blacklist
+									span.chat-actions_text В черный список
+
+
+        	include footer
+        	include popup_info

@@ -21,6 +21,11 @@ html, body {
     flex: 1;
     width: 940px;
     margin: 0 auto;
+
+    &.is-messages {
+        display: flex;
+        size: 100%;
+    }
 }
 
 .section_title {
@@ -101,6 +106,13 @@ html, body {
 
     &.is-white {
         background-color: #fff;
+    }
+
+    &.is-messages {
+        padding: 0;
+        flex: 1;
+        display: flex;
+        size: 100%;
     }
 }
 

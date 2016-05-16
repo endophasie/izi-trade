@@ -1,0 +1,51 @@
+.message {
+	width: 100%;
+	font-size: 0;
+	overflow: hidden;
+	padding: 10px 10px 10px 15px;
+}
+
+.message_userpic {
+	display: inline-block;
+	vertical-align: top;
+	size: 40px;
+	margin-right: 10px;
+
+	img {
+		border-radius: 50%;
+		size: 40px;
+	}
+}
+
+.message_content {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	size: calc(100% - 50px) auto;
+}
+
+.message_title {
+	clear: fix;
+	margin-bottom: 7px;
+	color: $small-text;
+}
+
+.message_name {
+	color: #363636;
+	float: left;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.message_date {
+	float: right;
+	font-weight: 300;
+}
+
+.message_text {
+
+	.is-messages & {
+		width: 80%;
+		max-height: 80px;
+	}
+}

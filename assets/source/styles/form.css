@@ -15,6 +15,17 @@
 	margin-top: 30px;
 }
 
+.form_simple {
+	background-color: #ececed;
+	border-radius: 6px;
+	padding: 10px 9px 8px;
+	margin: 10px 10px 10px 15px;
+}
+
+.form-simple_wrap {
+	position: relative;
+}
+
 .form_label {
 	display: block;
 	font-size: 12px;
@@ -31,12 +42,27 @@
 	text-indent: 12px;
 	font: 400 12px $sans-serif;
 	color: #000;
+	outline: none;
+	transition: border-color 300ms ease;
+
+	&:focus {
+		border-color: $color-active;
+	}
 
 	&.is-textarea {
 		min-height: 150px;
 		text-indent: 0;
 		padding: 5px 12px;
 	    resize: vertical;
+	}
+
+	&.is-textarea-message {
+		border-radius: 6px;
+		height: 40px;
+		padding-right: 130px;
+		font-size: 14px;
+		padding-top: 11px;
+		box-sizing: border-box;
 	}
 
 	&.is-half {
@@ -72,5 +98,11 @@
 
 	&:hover {
 		background-color: $bg-main.9;
+	}
+
+	&.is-simple {
+		border-radius: 0 6px 6px 0;
+		position: absolute;
+		right: 0;
 	}
 }

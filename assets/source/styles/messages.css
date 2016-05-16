@@ -1,0 +1,46 @@
+.messages  {
+	display: flex;
+	size: 100%;
+}
+
+.messages-all {
+	width: 300px;
+	background-color: #F7F7F7;
+}
+
+.chat {
+	flex: 1;
+    align-self: flex-end;
+	background-color: #fff;
+	padding-bottom: 15px;
+}
+
+.chat-actions {
+	text-align: center;
+}
+
+.chat-actions_link {
+	text-decoration: none;
+}
+
+.chat-actions_icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+
+	&.is-blacklist {
+		@mixin pic i-blacklist;
+	}
+}
+
+.chat-actions_text {
+	color: #e1e1e1;
+	display: inline-block;
+	vertical-align: middle;
+	border-bottom: 1px solid;
+	transition: border-color 300ms ease;
+
+	.chat-actions_link:hover & {
+		border-color: transparent;
+	}
+}
