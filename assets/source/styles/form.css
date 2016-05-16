@@ -15,14 +15,14 @@
 	margin-top: 30px;
 }
 
-.form_simple {
+.form_message {
 	background-color: #ececed;
 	border-radius: 6px;
 	padding: 10px 9px 8px;
 	margin: 10px 10px 10px 15px;
 }
 
-.form-simple_wrap {
+.form-message_wrap {
 	position: relative;
 }
 
@@ -100,7 +100,7 @@
 		background-color: $bg-main.9;
 	}
 
-	&.is-simple {
+	&.is-united {
 		border-radius: 0 6px 6px 0;
 		position: absolute;
 		right: 0;
