@@ -107,6 +107,7 @@ html, body {
 .section-content {
     background-color: #fafafa;
     padding: 40px 0 80px;
+    width: 100%;
 
     &.is-white {
         background-color: #fff;

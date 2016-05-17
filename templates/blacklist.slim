@@ -1,0 +1,38 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	section.section-content
+            		h2.section_title
+            			span.section-title-inner Черный список
+
+        			table.table_text
+    					thead
+    						tr
+    							th Пользователь
+    							th Статус
+    							th
+						tbody
+							tr
+								td
+									span.table-text_text endophasie
+								td
+									span.table-text_text Заблокирован
+								td
+									button.form_btn.is-solo href="#" Разблокировать
+							tr
+								td
+									span.table-text_text justinbiber
+								td
+									span.table-text_text Заблокирован
+								td
+									button.form_btn.is-solo href="#" Разблокировать
+
+    		include footer
+        	include popup_info

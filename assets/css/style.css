@@ -549,6 +549,7 @@ html, body {
 .section-content {
     background-color: #fafafa;
     padding: 40px 0 80px;
+    width: 100%;
 }
 
 .section-content.is-white {
@@ -1476,6 +1477,10 @@ html, body {
 
 .form_btn:hover, .form_btn:focus {
   background-color: rgba(28, 32, 58, 0.9);
+}
+
+.form_btn.is-solo {
+  border-radius: 6px;
 }
 
 .form_btn.is-united {

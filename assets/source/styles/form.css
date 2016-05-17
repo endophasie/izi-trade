@@ -110,6 +110,10 @@
 		background-color: $bg-main.9;
 	}
 
+	&.is-solo {
+		border-radius: 6px;
+	}
+
 	&.is-united {
 		border-radius: 0 6px 6px 0;
 		position: absolute;
