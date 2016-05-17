@@ -47,7 +47,7 @@
 	right: 10px;
 	top: 10px;
 	cursor: pointer;
-	@mixin icon i-message, 25px;
+	@mixin icon i-close, 25px;
 }
 
 .popup_title {

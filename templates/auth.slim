@@ -10,8 +10,19 @@ html lang="en"
             main.main-content
             	section.section-content.is-white
             		h2.section_title
-	            			span.section-title-inner Пройдите аутентификацию
-	            			span.section-title-slogan  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur soluta quam, labore eaque sit repellendus tenetur, impedit quibusdam, pariatur corrupti adipisci et quasi officiis numquam iure tempore similique omnis! Quasi.
+            			span.section-title-inner Пройдите аутентификацию
+            			span.section-title-slogan  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur soluta quam, labore eaque sit repellendus tenetur, impedit quibusdam, pariatur corrupti adipisci et quasi officiis numquam iure tempore similique omnis! Quasi.
+        			.section_cols
+        				.section_col
+        					form
+        						.form-message_wrap
+        							input.form_field.is-text-message type="tel" placeholder="Номер телефона"
+        							input.form_btn.is-united type="submit" value="Отправить"
+						.section_col
+        					form
+        						.form-message_wrap
+        							input.form_field.is-text-message type="text" placeholder="Полученный код"
+        							input.form_btn.is-united type="submit" value="Ок"
 
 			include footer
         	include popup_info

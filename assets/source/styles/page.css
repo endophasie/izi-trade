@@ -19,13 +19,13 @@ html, body {
 
 .main-content {
     flex: 1;
+    display: flex;
     width: 80%;
     min-width: 900px;
     max-width: 1400px;
     margin: 0 auto;
 
     &.is-messages {
-        display: flex;
         size: 100%;
     }
 }
@@ -85,6 +85,8 @@ html, body {
     display: block;
     text-align: center;
     font-weight: 400;
+    width: 60%;
+    margin: 0 auto;
 
     &:after {
         content: '';
@@ -121,6 +123,18 @@ html, body {
 .section_form {
     margin: 0 auto 80px;
     width: 500px;
+}
+
+.section_cols {
+    clear: fix;
+    margin: 0 auto;
+    width: 740px;
+}
+
+.section_col {
+    float: left;
+    margin: 0 10px;
+    width: 350px;
 }
 
 .history {

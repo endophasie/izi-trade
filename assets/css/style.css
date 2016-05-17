@@ -460,6 +460,10 @@ html, body {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     width: 80%;
     min-width: 900px;
     max-width: 1400px;
@@ -467,10 +471,6 @@ html, body {
 }
 
 .main-content.is-messages {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   height: 100%;
 }
@@ -530,6 +530,8 @@ html, body {
     display: block;
     text-align: center;
     font-weight: 400;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .section-title-slogan:after {
@@ -570,6 +572,23 @@ html, body {
 .section_form {
     margin: 0 auto 80px;
     width: 500px;
+}
+
+.section_cols:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.section_cols {
+    margin: 0 auto;
+    width: 740px;
+}
+
+.section_col {
+    float: left;
+    margin: 0 10px;
+    width: 350px;
 }
 
 .history {
@@ -1210,7 +1229,7 @@ html, body {
 	right: 10px;
 	top: 10px;
 	cursor: pointer;
-	background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215.875%22%20height%3D%2211.875%22%20viewBox%3D%220%200%2015.875%2011.875%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%2365666c%3Bfill-rule%3Aevenodd%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M-.001-.008v2.115l7.937%206.477%207.938-6.477V-.008H-.001zm14.552%201.454l-6.615%205.42-6.614-5.42v-.132h13.229v.132zm0%200v9.121H1.319V5.275h-1.32v6.609h15.875V5.275h-1.323v5.287zm0%200%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
+	background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2050%22%3E%3Cpath%20d%3D%22M37.304%2011.282l1.414%201.414-26.022%2026.02-1.414-1.413z%22%2F%3E%3Cpath%20d%3D%22M12.696%2011.282l26.022%2026.02-1.414%201.415-26.022-26.02z%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
 	width: 25px;
 	height: 25px;
 	background-size: 100% 100%;
@@ -1386,13 +1405,17 @@ html, body {
 	text-indent: 12px;
 	font: 400 12px 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #000;
+	background-color: #EDEDED;
 	outline: none;
-	-webkit-transition: border-color 300ms ease;
-	transition: border-color 300ms ease;
+	-webkit-transition: border-color 300ms ease,
+				background-color 300ms ease;
+	transition: border-color 300ms ease,
+				background-color 300ms ease;
 }
 
 .form_field:focus {
   border-color: #ff5012;
+  background-color: #fff;
 }
 
 .form_field.is-textarea {
@@ -1409,6 +1432,13 @@ html, body {
   font-size: 14px;
   box-sizing: border-box;
   resize: vertical;
+}
+
+.form_field.is-text-message {
+  border-radius: 6px;
+  font-size: 14px;
+  padding-right: 100px;
+  height: 40px;
 }
 
 .form_field.is-half {
