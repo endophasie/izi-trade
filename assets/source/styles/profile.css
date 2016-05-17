@@ -68,13 +68,6 @@
 
 .request-info {
 	text-align: center;
-
-	.form_btn {
-		line-height: 38px;
-		border-radius: 4px;
-		display: inline-block;
-		text-decoration: none;
-	}
 }
 
 .request-info_text {
