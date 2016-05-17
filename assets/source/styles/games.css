@@ -6,23 +6,15 @@
 
 .actions_viewport {
 	padding: 30px 0 80px;
-	width: 940px;
-	overflow: hidden;
 	position: relative;
-	height: 840px;
-}
-
-.actions_overview {
-	position: absolute;
-	width: 940px;
-	left: 0;
-	top: 0;
-	clear: fix;
 }
 
 .actions {
-	float: left;
-	width: 940px;
+	display: none;
+
+	&.is-active {
+		display: block;
+	}
 }
 
 .actions_menu {
@@ -45,7 +37,7 @@
 	text-decoration: none;
 	padding: 3px 5px;
 
-	&.active {
+	&.is-active {
 		background-color: #fff;
 		color: $bg-main;
 
@@ -89,6 +81,10 @@
 .grid-item {
   float: left;
 }
+.grid-sizer,
+.grid-item {
+	width: 33.3%;
+}
 
 .action-game_link {
 	text-decoration: none;
@@ -121,6 +117,11 @@
 .action-game_title {
 	color: #fff;
 	font: 300 26px/40px $sans-serif;
+}
+
+.action-game_pic {
+	size: 100% auto;
+	max-width: 100%;
 }
 
 .actions.is-cubes {
