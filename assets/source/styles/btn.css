@@ -90,4 +90,9 @@
 	display: block;
 	font-size: 18px;
 	background: linear-gradient(to right, #ff5012 0%, #1e4486 100%);
+	transition: opacity 300ms ease;
+
+	&:hover {
+		opacity: .8;
+	}
 }

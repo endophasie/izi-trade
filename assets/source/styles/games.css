@@ -35,7 +35,7 @@
 	font-size: 12px;
 	color: #fff;
 	text-decoration: none;
-	padding: 3px 5px;
+	padding: 1px 5px 3px;
 
 	&.is-active {
 		background-color: #fff;
@@ -169,7 +169,7 @@
 	display: inline-block;
 	size: 30px;
 	text-align: center;
-	line-height: 30px;
+	line-height: 27px;
 	font-size: 18px;
 	color: #fff;
 }
