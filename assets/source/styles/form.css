@@ -58,11 +58,11 @@
 
 	&.is-textarea-message {
 		border-radius: 6px;
-		height: 40px;
-		padding-right: 130px;
+		min-height: 40px;
+		padding: 11px 130px 0 0;
 		font-size: 14px;
-		padding-top: 11px;
 		box-sizing: border-box;
+	    resize: vertical;
 	}
 
 	&.is-half {

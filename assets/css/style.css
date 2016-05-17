@@ -460,7 +460,9 @@ html, body {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    width: 940px;
+    width: 80%;
+    min-width: 900px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -579,8 +581,10 @@ html, body {
 }
 
 .header-content {
-	width: 840px;
+	width: 80%;
 	height: 100%;
+    min-width: 900px;
+    max-width: 1400px;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0;
@@ -633,12 +637,14 @@ html, body {
 }
 
 .nav_list {
-	width: 900px;
+	width: 80%;
 	height: 100%;
+    min-width: 900px;
+    max-width: 1400px;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0;
-	padding: 0;
+	padding: 0 30px;
 	list-style: none;
 	text-align: justify;
 }
@@ -990,7 +996,9 @@ html, body {
 }
 
 .footer-content {
-	width: 840px;
+    width: 70%;
+    min-width: 900px;
+    max-width: 1400px;
 	margin: 0 auto;
 	font-size: 0;
 }
@@ -1396,11 +1404,11 @@ html, body {
 
 .form_field.is-textarea-message {
   border-radius: 6px;
-  height: 40px;
-  padding-right: 130px;
+  min-height: 40px;
+  padding: 11px 130px 0 0;
   font-size: 14px;
-  padding-top: 11px;
   box-sizing: border-box;
+  resize: vertical;
 }
 
 .form_field.is-half {
@@ -2535,10 +2543,13 @@ html, body {
 
 .chat.is-only {
   width: 80%;
-  height: 300px;
-  overflow-y: auto;
   margin: 0 auto;
   padding-bottom: 0;
+}
+
+.chat-content_read {
+	height: 300px;
+	overflow-y: auto;
 }
 
 .chat-actions {

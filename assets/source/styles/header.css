@@ -3,7 +3,9 @@
 }
 
 .header-content {
-	size: 840px 100%;
+	size: 80% 100%;
+    min-width: 900px;
+    max-width: 1400px;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0;

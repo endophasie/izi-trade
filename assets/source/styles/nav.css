@@ -10,11 +10,13 @@
 }
 
 .nav_list {
-	size: 900px 100%;
+	size: 80% 100%;
+    min-width: 900px;
+    max-width: 1400px;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0;
-	padding: 0;
+	padding: 0 30px;
 	list-style: none;
 	text-align: justify;
 
