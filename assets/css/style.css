@@ -2681,15 +2681,21 @@ html, body {
 .guaranties {
 	padding: 0;
 	margin: 0 30px;
-	font-size: 0;
 	list-style: none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .guaranties_item {
-	display: inline-block;
-	vertical-align: top;
+	position: relative;
 	font-size: 12px;
-	padding: 0 20px;
+	padding: 0 20px 20px;
 	width: 25%;
 	text-align: center;
 	color: #363636;
@@ -2697,10 +2703,11 @@ html, body {
 
 .guaranties_item:after {
   content: '';
-  display: block;
-  width: 120px;
-  margin: 0 auto;
-  padding-top: 20px;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
   border-bottom: 1px solid #363636;
   -webkit-transition: border-bottom-color 150ms ease;
   transition: border-bottom-color 150ms ease;
