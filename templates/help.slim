@@ -1,0 +1,33 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content
+                    h2.section_title
+                        span.section-title-inner Всегда рады помочь
+                        span.section-title-slogan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut molestiae vel architecto sunt error voluptatum quisquam magnam, minima itaque consequatur nihil maxime libero, soluta laudantium saepe odio, possimus nam unde?
+            		ul.guaranties
+            			li.guaranties_item.is-framed
+            				.guaranties_img
+            					span.i-fast
+        					.guaranties_title Быстро
+        					.guaranties_text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut molestiae vel architecto sunt error voluptatum quisquam magnam, minima itaque consequatur nihil maxime libero, soluta laudantium saepe odio, possimus nam unde?
+            			li.guaranties_item.is-framed
+            				.guaranties_img
+            					span.i-useful
+        					.guaranties_title Удобно
+        					.guaranties_text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut molestiae vel architecto sunt error voluptatum quisquam magnam, minima itaque consequatur nihil
+                    .video-wrap
+                        .video
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5_LRQMRTFXY" frameborder="0" allowfullscreen></iframe>
+                        .video
+                            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5_LRQMRTFXY" frameborder="0" allowfullscreen></iframe>
+
+        	include footer

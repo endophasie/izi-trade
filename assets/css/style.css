@@ -646,6 +646,25 @@ html, body {
     margin-bottom: 20px;
 }
 
+.video-wrap:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.video-wrap {
+    margin: 0 30px;
+}
+
+.video {
+    width: 48.8%;
+    float: left;
+}
+
+.video:first-child {
+  margin: 0 20px 0 0;
+}
+
 .header {
 	height: 80px;
 }
@@ -2680,7 +2699,7 @@ html, body {
 }
 .guaranties {
 	padding: 0;
-	margin: 0 30px;
+	margin: 0 30px 30px;
 	list-style: none;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -2695,7 +2714,8 @@ html, body {
 .guaranties_item {
 	position: relative;
 	font-size: 12px;
-	padding: 0 20px 20px;
+	padding: 0 10px 20px;
+	margin: 0 10px;
 	width: 25%;
 	text-align: center;
 	color: #363636;
@@ -2729,6 +2749,15 @@ html, body {
   opacity: 1;
 }
 
+.guaranties_item.is-framed {
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+
+.guaranties_item.is-framed:after {
+  bottom: 20px;
+}
+
 .guaranties_img {
 	border-radius: 50%;
 	background-color: #3c3d41;
@@ -2739,6 +2768,10 @@ html, body {
 	line-height: 81px;
     -webkit-transition: background-color 150ms ease;
     transition: background-color 150ms ease;
+}
+
+.is-framed .guaranties_img {
+  margin-top: -30px;
 }
 
 .guaranties_title {

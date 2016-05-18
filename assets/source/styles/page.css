@@ -178,3 +178,17 @@ html, body {
 .history {
     margin-bottom: 20px;
 }
+
+.video-wrap {
+    clear: fix;
+    margin: 0 30px;
+}
+
+.video {
+    width: 48.8%;
+    float: left;
+
+    &:first-child {
+        margin: 0 20px 0 0;
+    }
+}

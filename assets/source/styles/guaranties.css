@@ -1,6 +1,6 @@
 .guaranties {
 	padding: 0;
-	margin: 0 30px;
+	margin: 0 30px 30px;
 	list-style: none;
 	display: flex;
 	justify-content: center;
@@ -9,7 +9,8 @@
 .guaranties_item {
 	position: relative;
 	font-size: 12px;
-	padding: 0 20px 20px;
+	padding: 0 10px 20px;
+	margin: 0 10px;
 	width: 25%;
 	text-align: center;
 	color: #363636;
@@ -43,6 +44,15 @@
 			opacity: 1;
 		}
     }
+
+    &.is-framed {
+    	background-color: #fff;
+    	padding-bottom: 40px;
+
+    	&:after {
+			bottom: 20px;
+    	}
+    }
 }
 
 .guaranties_img {
@@ -53,6 +63,10 @@
 	text-align: center;
 	line-height: 81px;
     transition: background-color 150ms ease;
+
+	.is-framed & {
+		margin-top: -30px;
+	}
 }
 
 .guaranties_title {
