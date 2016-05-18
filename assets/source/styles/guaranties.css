@@ -21,6 +21,7 @@
         margin: 0 auto;
         padding-top: 20px;
         border-bottom: 1px solid #363636;
+    	transition: border-bottom-color 150ms ease;
     }
 
     &:hover {
@@ -50,15 +51,18 @@
 	margin: 0 auto 20px;
 	text-align: center;
 	line-height: 81px;
+    transition: background-color 150ms ease;
 }
 
 .guaranties_title {
 	font-size: 18px;
 	margin-bottom: 15px;
+    transition: color 150ms ease;
 }
 
 .guaranties_text {
 	opacity: .7;
+    transition: opacity 150ms ease;
 }
 
 .i-fast {

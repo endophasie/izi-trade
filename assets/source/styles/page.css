@@ -140,6 +140,35 @@ html, body {
     width: 350px;
 }
 
+.section_text {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.section-text_text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-text_list {
+    padding: 0 0 0 50px;
+    margin: 0 auto;
+    list-style-image: inline('../../img/i-tick.svg');
+}
+
+.section-text_item {
+    opacity: .7;
+    cursor: default;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    transition: opacity 200ms ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
 .history {
     margin-bottom: 20px;
 }
