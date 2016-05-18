@@ -1,0 +1,82 @@
+.guaranties {
+	padding: 0;
+	margin: 0 30px;
+	font-size: 0;
+	list-style: none;
+}
+
+.guaranties_item {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	padding: 0 20px;
+	width: 25%;
+	text-align: center;
+	color: #363636;
+
+	&:after {
+        content: '';
+        display: block;
+        width: 120px;
+        margin: 0 auto;
+        padding-top: 20px;
+        border-bottom: 1px solid #363636;
+    }
+
+    &:hover {
+
+    	&:after {
+			border-bottom-color: $color-active;
+		}
+
+		.guaranties_img {
+			background-color: $color-active;
+		}
+
+		.guaranties_title {
+			color: $color-active;
+		}
+
+		.guaranties_text {
+			opacity: 1;
+		}
+    }
+}
+
+.guaranties_img {
+	border-radius: 50%;
+	background-color: $nav-link;
+	size: 60px;
+	margin: 0 auto 20px;
+	text-align: center;
+	line-height: 81px;
+}
+
+.guaranties_title {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.guaranties_text {
+	opacity: .7;
+}
+
+.i-fast {
+	display: inline-block;
+	@mixin icon i-fast, 28px;
+}
+
+.i-useful {
+	display: inline-block;
+	@mixin icon i-useful, 28px;
+}
+
+.i-choise {
+	display: inline-block;
+	@mixin icon i-choise, 28px;
+}
+
+.i-safesystem {
+	display: inline-block;
+	@mixin icon i-safesystem, 28px;
+}

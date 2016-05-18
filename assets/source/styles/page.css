@@ -109,6 +109,7 @@ html, body {
     background-color: #fafafa;
     padding: 40px 0 80px;
     width: 100%;
+    flex: 1;
 
     &.is-white {
         background-color: #fff;
