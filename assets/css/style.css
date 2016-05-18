@@ -510,7 +510,7 @@ html, body {
 }
 
 .section-title-inner:only-child {
-  line-height: 2;
+  margin-bottom: 0;
 }
 
 .section-title-inner:only-child:after {
@@ -519,6 +519,7 @@ html, body {
   width: 120px;
   margin: 0 auto;
   border-bottom: 1px solid #ff5012;
+  padding-top: 20px;
 }
 
 .is-profile .section-title-inner {
@@ -629,6 +630,16 @@ html, body {
 
 .section-text_item:hover, .section-text_item:focus {
   opacity: 1;
+}
+
+.i-partner {
+    background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2273%22%20height%3D%2273%22%20viewBox%3D%220%200%2073%2073%22%3E%20%20%3Cdefs%3E%20%20%20%20%3Cstyle%3E%20%20%20%20%20%20.cls-1%20%7B%20%20%20%20%20%20%20%20fill%3A%20%23ff5012%3B%20%20%20%20%20%20%20%20stroke%3A%20%23ff5012%3B%20%20%20%20%20%20%20%20stroke-linejoin%3A%20round%3B%20%20%20%20%20%20%20%20stroke-width%3A%203px%3B%20%20%20%20%20%20%20%20filter%3A%20url%28%23filter%29%3B%20%20%20%20%20%20%7D%20%20%20%20%20%20.cls-2%20%7B%20%20%20%20%20%20%20%20fill%3A%20%23ff5011%3B%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%20%20%20%20%20%20%20%20filter%3A%20url%28%23filter-2%29%3B%20%20%20%20%20%20%7D%20%20%20%20%3C%2Fstyle%3E%20%20%20%20%3Cfilter%20id%3D%22filter%22%20x%3D%221.5%22%20y%3D%221.5%22%20width%3D%2270%22%20height%3D%2270%22%20filterUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%20%20%3CfeFlood%20result%3D%22flood%22%20flood-color%3D%22%23fff%22%2F%3E%20%20%20%20%20%20%3CfeComposite%20result%3D%22composite%22%20operator%3D%22in%22%20in2%3D%22SourceGraphic%22%2F%3E%20%20%20%20%20%20%3CfeBlend%20result%3D%22blend%22%20in2%3D%22SourceGraphic%22%2F%3E%20%20%20%20%3C%2Ffilter%3E%20%20%20%20%3Cfilter%20id%3D%22filter-2%22%20x%3D%22587.312%22%20y%3D%22181.438%22%20width%3D%2229.063%22%20height%3D%2227.781%22%20filterUnits%3D%22userSpaceOnUse%22%3E%20%20%20%20%20%20%3CfeFlood%20result%3D%22flood%22%20flood-color%3D%22%23ff5012%22%2F%3E%20%20%20%20%20%20%3CfeComposite%20result%3D%22composite%22%20operator%3D%22in%22%20in2%3D%22SourceGraphic%22%2F%3E%20%20%20%20%20%20%3CfeBlend%20result%3D%22blend%22%20in2%3D%22SourceGraphic%22%2F%3E%20%20%20%20%3C%2Ffilter%3E%20%20%3C%2Fdefs%3E%20%20%3Cg%20style%3D%22fill%3A%20%23ff5012%3B%20filter%3A%20url%28%23filter%29%22%3E%20%20%20%20%3Ccircle%20id%3D%22circle%22%20class%3D%22cls-1%22%20cx%3D%2236.5%22%20cy%3D%2236.5%22%20r%3D%2235%22%20style%3D%22stroke%3A%20inherit%3B%20filter%3A%20none%3B%20fill%3A%20inherit%22%2F%3E%20%20%3C%2Fg%3E%20%20%3Cuse%20xlink%3Ahref%3D%22%23circle%22%20style%3D%22stroke%3A%20%23ff5012%3B%20filter%3A%20none%3B%20fill%3A%20none%22%2F%3E%20%20%3Cpath%20id%3D%22icon-2%22%20data-name%3D%22icon%22%20class%3D%22cls-2%22%20d%3D%22M614.286%2C191.288c-0.451-1.391.165-3.336-.679-4.493s-2.9-1.181-4.076-2.032-1.8-2.789-3.195-3.24c-1.344-.436-3%2C0.749-4.5.749s-3.151-1.185-4.5-.749c-1.393.45-2.035%2C2.4-3.2%2C3.24s-3.222.863-4.075%2C2.032-0.228%2C3.1-.68%2C4.493c-0.437%2C1.34-2.1%2C2.547-2.1%2C4.034s1.661%2C2.693%2C2.1%2C4.034c0.451%2C1.39-.165%2C3.336.68%2C4.493s2.9%2C1.181%2C4.075%2C2.031%2C1.8%2C2.79%2C3.195%2C3.242c1.345%2C0.435%2C3-.75%2C4.5-0.75s3.151%2C1.185%2C4.5.75c1.393-.452%2C2.034-2.4%2C3.194-3.241s3.223-.863%2C4.076-2.032%2C0.228-3.1.68-4.493c0.437-1.341%2C2.1-2.548%2C2.1-4.034S614.723%2C192.629%2C614.286%2C191.288ZM601.841%2C205.5a10.179%2C10.179%2C0%2C1%2C1%2C10.2-10.179A10.2%2C10.2%2C0%2C0%2C1%2C601.841%2C205.5Zm0-18.7a8.517%2C8.517%2C0%2C1%2C0%2C8.538%2C8.517A8.537%2C8.537%2C0%2C0%2C0%2C601.841%2C186.805Zm5.686%2C7.516-2.763%2C2.288%2C0.887%2C3.471a0.515%2C0.515%2C0%2C0%2C1-.774.562l-3.036-1.914-3.035%2C1.914a0.52%2C0.52%2C0%2C0%2C1-.578-0.019%2C0.512%2C0.512%2C0%2C0%2C1-.2-0.543l0.886-3.471-2.762-2.288a0.513%2C0.513%2C0%2C0%2C1%2C.3-0.908l3.583-.232%2C1.328-3.327a0.516%2C0.516%2C0%2C0%2C1%2C.957%2C0l1.329%2C3.327%2C3.583%2C0.232A0.513%2C0.513%2C0%2C0%2C1%2C607.527%2C194.321Z%22%20transform%3D%22translate%28-565.5%20-158.812%29%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
+    width: 76px;
+    height: 76px;
+    background-size: 100% 100%;
+    -webkit-transition: background 300ms ease;
+    transition: background 300ms ease;
+    margin: 0 auto 20px;
 }
 
 .history {

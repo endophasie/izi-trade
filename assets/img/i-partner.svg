@@ -1,0 +1,34 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73" height="73" viewBox="0 0 73 73">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff5012;
+        stroke: #ff5012;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #ff5011;
+        fill-rule: evenodd;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="1.5" y="1.5" width="70" height="70" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="587.312" y="181.438" width="29.063" height="27.781" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ff5012"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #ff5012; filter: url(#filter)">
+    <circle id="circle" class="cls-1" cx="36.5" cy="36.5" r="35" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#circle" style="stroke: #ff5012; filter: none; fill: none"/>
+  <path id="icon-2" data-name="icon" class="cls-2" d="M614.286,191.288c-0.451-1.391.165-3.336-.679-4.493s-2.9-1.181-4.076-2.032-1.8-2.789-3.195-3.24c-1.344-.436-3,0.749-4.5.749s-3.151-1.185-4.5-.749c-1.393.45-2.035,2.4-3.2,3.24s-3.222.863-4.075,2.032-0.228,3.1-.68,4.493c-0.437,1.34-2.1,2.547-2.1,4.034s1.661,2.693,2.1,4.034c0.451,1.39-.165,3.336.68,4.493s2.9,1.181,4.075,2.031,1.8,2.79,3.195,3.242c1.345,0.435,3-.75,4.5-0.75s3.151,1.185,4.5.75c1.393-.452,2.034-2.4,3.194-3.241s3.223-.863,4.076-2.032,0.228-3.1.68-4.493c0.437-1.341,2.1-2.548,2.1-4.034S614.723,192.629,614.286,191.288ZM601.841,205.5a10.179,10.179,0,1,1,10.2-10.179A10.2,10.2,0,0,1,601.841,205.5Zm0-18.7a8.517,8.517,0,1,0,8.538,8.517A8.537,8.537,0,0,0,601.841,186.805Zm5.686,7.516-2.763,2.288,0.887,3.471a0.515,0.515,0,0,1-.774.562l-3.036-1.914-3.035,1.914a0.52,0.52,0,0,1-.578-0.019,0.512,0.512,0,0,1-.2-0.543l0.886-3.471-2.762-2.288a0.513,0.513,0,0,1,.3-0.908l3.583-.232,1.328-3.327a0.516,0.516,0,0,1,.957,0l1.329,3.327,3.583,0.232A0.513,0.513,0,0,1,607.527,194.321Z" transform="translate(-565.5 -158.812)"/>
+</svg>

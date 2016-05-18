@@ -60,7 +60,7 @@ html, body {
     }
 
     &:only-child {
-        line-height: 2;
+        margin-bottom: 0;
 
         &:after {
             content: '';
@@ -68,6 +68,7 @@ html, body {
             width: 120px;
             margin: 0 auto;
             border-bottom: 1px solid $color-active;
+            padding-top: 20px;
         }
     }
 
@@ -167,6 +168,11 @@ html, body {
     &:hover {
         opacity: 1;
     }
+}
+
+.i-partner {
+    @mixin icon i-partner, 76px;
+    margin: 0 auto 20px;
 }
 
 .history {
