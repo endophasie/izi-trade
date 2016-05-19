@@ -566,6 +566,10 @@ html, body {
   background-color: #fff;
 }
 
+.section-content.is-fullsize {
+  padding-top: 0;
+}
+
 .section-content.is-messages {
   padding: 0;
   -webkit-box-flex: 1;
@@ -723,6 +727,7 @@ html, body {
   height: 50px;
   box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.28);
   position: relative;
+  z-index: 2;
 }
 
 .nav_list {
@@ -2210,6 +2215,7 @@ html, body {
 
 .actions_grid {
 	max-width: 860px;
+	height: 1000px;
 	margin: 0 auto 35px;
 	position: relative;
 	text-align: left;
@@ -2221,6 +2227,12 @@ html, body {
 .grid-sizer,
 .grid-item {
 	width: 33.3%;
+	height: 300px;
+}
+
+.grid-item--height2 { height: 400px; }
+.grid-item--width2 {
+	width: 300px;
 }
 
 .action-game_link {
@@ -2320,6 +2332,98 @@ html, body {
 	line-height: 27px;
 	font-size: 18px;
 	color: #fff;
+}
+.game-title_top {
+	position: relative;
+	line-height: 1;
+	height: 200px;
+}
+
+.game-title_title {
+	text-align: center;
+	color: #fff;
+	text-shadow: 0.5px 0.866px 2px rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	font-size: 38px;
+	position: relative;
+	top: -118px;
+}
+
+.game-title_pic {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.game-title_info {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #ff5012;
+	position: relative;
+	top: 1px;
+}
+
+.game-title_text {
+	color: #000;
+	font-weight: 500;
+}
+
+.game_table {
+	border-top: 1px solid #D2D2D2;
+}
+
+.table_form {
+	position: relative;
+	width: 125px;
+	margin: 0 auto;
+}
+
+.table-form_field {
+	border-color: transparent;
+	outline: none;
+	padding-right: 15px;
+	width: 100%;
+	text-indent: 3px;
+}
+
+.table-form_field::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.table-form_field::-moz-placeholder {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.table-form_field:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.table-form_field::placeholder {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.table-form_field:focus {
+  border-bottom-color: #BEBEBE;
+}
+
+.table-form_btn {
+	border: 0;
+	outline: none;
+	padding: 0;
+	background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%2010%2010%22%3E%20%20%3Cdefs%3E%20%20%20%20%3Cstyle%3E%20%20%20%20%20%20.cls-1%20%7B%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%20%20%20%20%20%20%7D%20%20%20%20%3C%2Fstyle%3E%20%20%3C%2Fdefs%3E%20%20%3Cpath%20id%3D%22%D0%A4%D0%B8%D0%B3%D1%83%D1%80%D0%B0_3%22%20data-name%3D%22%D0%A4%D0%B8%D0%B3%D1%83%D1%80%D0%B0%203%22%20class%3D%22cls-1%22%20d%3D%22M732.882%2C362.007a3.878%2C3.878%2C0%2C1%2C0%2C2.214%2C7.061l2.876%2C2.875a0.135%2C0.135%2C0%2C0%2C0%2C.193%2C0l0.776-.775a0.139%2C0.139%2C0%2C0%2C0%2C0-.193l-2.876-2.876a3.877%2C3.877%2C0%2C0%2C0-3.183-6.092h0Zm0%2C6.842a2.965%2C2.965%2C0%2C1%2C1%2C2.965-2.964%2C2.964%2C2.964%2C0%2C0%2C1-2.965%2C2.964h0Zm0%2C0%22%20transform%3D%22translate%28-729%20-362%29%22%2F%3E%3C%2Fsvg%3E') center center no-repeat;
+	width: 12px;
+	height: 12px;
+	background-size: 100% 100%;
+	-webkit-transition: background 300ms ease;
+	transition: background 300ms ease;
+	position: absolute;
+	right: 0;
+	top: 4px;
 }
 .about {
 	padding: 20px 0 0;

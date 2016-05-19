@@ -116,6 +116,10 @@ html, body {
         background-color: #fff;
     }
 
+    &.is-fullsize {
+        padding-top: 0;
+    }
+
     &.is-messages {
         padding: 0;
         flex: 1;

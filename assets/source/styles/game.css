@@ -1,0 +1,72 @@
+
+.game-title_top {
+	position: relative;
+	line-height: 1;
+	height: 200px;
+}
+
+.game-title_title {
+	text-align: center;
+	color: #fff;
+	text-shadow: 0.5px 0.866px 2px rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	font-size: 38px;
+	position: relative;
+	top: -118px;
+}
+
+.game-title_pic {
+    size: 100% auto;
+    max-width: 100%;
+}
+
+.game-title_info {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	border-bottom: 3px solid $color-active;
+	position: relative;
+	top: 1px;
+}
+
+.game-title_text {
+	color: #000;
+	font-weight: 500;
+}
+
+.game_table {
+	border-top: 1px solid #D2D2D2;
+}
+
+.table_form {
+	position: relative;
+	width: 125px;
+	margin: 0 auto;
+}
+
+.table-form_field {
+	border-color: transparent;
+	outline: none;
+	padding-right: 15px;
+	width: 100%;
+	text-indent: 3px;
+
+	&::placeholder {
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	&:focus {
+		border-bottom-color: #BEBEBE;
+	}
+}
+
+.table-form_btn {
+	border: 0;
+	outline: none;
+	padding: 0;
+	@mixin icon i-search, 12px;
+	position: absolute;
+	right: 0;
+	top: 4px;
+}
