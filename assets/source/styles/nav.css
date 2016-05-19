@@ -6,6 +6,7 @@
 		height: 50px;
 		box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.28);
 		position: relative;
+		z-index: 2;
 	}
 }
 
