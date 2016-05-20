@@ -1,0 +1,54 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content.is-fullsize
+					.game-title
+						.game-title_top
+							img.game-title_pic src="assets/img/game-title_pic.jpg" alt=""/
+							h2.game-title_title Black Desert
+						.game-title_info
+							.game-title_text Биржа IZI Trade поможет вам продать и купить монеты Dlack Desert на любом из европейских и североамериканских серверов, а также вы можете купить монеты Black Desert Special Edition и монеты Black Desert Legend. Все сделки защищены гарантом CashPass.
+    				table.table_text.game_table
+    					thead
+    						tr
+    							th
+    								|Драйвер
+    								span.i-sort
+    							th Тип прокачки
+    							th Расчет
+    							th Стоимость
+						tbody
+							tr
+								td
+									span.table-text_name endophasie
+									span.i-status.is-online
+									span.table-text_comm 3 года на сайте
+									span.table-text_comm 15 отзывов
+								td
+									span.table-text_text Разное
+								td
+									span.table-text_text 1 час
+								td
+									span.table-text_text 1,23 руб.
+							tr
+								td
+									span.table-text_name SomeLongNameSomeShortMan
+									span.i-status.is-offline
+									span.table-text_comm 3 года на сайте
+									span.table-text_comm 15 отзывов
+								td
+									span.table-text_text Фарминг
+								td
+									span.table-text_text 22 дня
+								td
+									span.table-text_text 1200 руб.
+
+        	include footer
