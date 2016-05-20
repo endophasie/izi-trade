@@ -1620,6 +1620,17 @@ html, body {
   text-align: left;
 }
 
+.table-sort_link {
+	text-decoration: none;
+	color: #000;
+	-webkit-transition: color 300ms ease;
+	transition: color 300ms ease;
+}
+
+.table-sort_link:hover, .table-sort_link:focus {
+  color: #ff5012;
+}
+
 .i-delete {
 	display: inline-block;
 	cursor: pointer;
@@ -2360,6 +2371,16 @@ html, body {
 .game-title_text {
 	color: #000;
 	font-weight: 500;
+}
+
+.game-title_select {
+	background-color: #ff5012;
+	font-weight: 400;
+	font-size: 16px;
+	height: 28px;
+	border: 0;
+	outline: none;
+	border-radius: 0;
 }
 
 .game_table {

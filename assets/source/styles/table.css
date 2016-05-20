@@ -62,6 +62,16 @@
 	}
 }
 
+.table-sort_link {
+	text-decoration: none;
+	color: $base;
+	transition: color 300ms ease;
+
+	&:hover {
+		color: $color-active;
+	}
+}
+
 .i-delete {
 	display: inline-block;
 	cursor: pointer;

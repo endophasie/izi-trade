@@ -34,6 +34,16 @@
 	font-weight: 500;
 }
 
+.game-title_select {
+	background-color: $color-active;
+	font-weight: 400;
+	font-size: 16px;
+	height: 28px;
+	border: 0;
+	outline: none;
+	border-radius: 0;
+}
+
 .game_table {
 	border-top: 1px solid #D2D2D2;
 }
