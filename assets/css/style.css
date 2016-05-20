@@ -2215,7 +2215,6 @@ html, body {
 
 .actions_grid {
 	max-width: 860px;
-	height: 1000px;
 	margin: 0 auto 35px;
 	position: relative;
 	text-align: left;
@@ -2227,12 +2226,6 @@ html, body {
 .grid-sizer,
 .grid-item {
 	width: 33.3%;
-	height: 300px;
-}
-
-.grid-item--height2 { height: 400px; }
-.grid-item--width2 {
-	width: 300px;
 }
 
 .action-game_link {
