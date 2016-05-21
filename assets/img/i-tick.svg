@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13.045" height="9.983" viewBox="0 0 10.25 7.844">
-  <defs>
-    <style>
-      .cls-1 {
-        fill-rule: evenodd;
-        filter: url(#filter);
-      }
-    </style>
-    <filter id="filter" x="497.719" y="505.562" width="10.25" height="7.844" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#8dc63f"/>
-      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
-      <feBlend result="blend" in2="SourceGraphic"/>
-    </filter>
-  </defs>
-  <path id="_01" data-name="01" class="cls-1" d="M507.787,506.641l-0.9-.9a0.639,0.639,0,0,0-.9,0l-4.334,4.341-1.942-1.949a0.637,0.637,0,0,0-.9,0l-0.9.9a0.637,0.637,0,0,0,0,.9l2.392,2.392,0.9,0.9a0.639,0.639,0,0,0,.9,0l0.9-.9,4.784-4.784A0.64,0.64,0,0,0,507.787,506.641Z" transform="translate(-497.719 -505.562)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="13.045" height="9.983" viewBox="0 0 10.25 7.844"><defs><style>.cls-1{fill-rule:evenodd;filter:url(#filter)}</style><filter id="filter" x="497.719" y="505.562" width="10.25" height="7.844" filterUnits="userSpaceOnUse"><feFlood result="flood" flood-color="#8dc63f"/><feComposite result="composite" operator="in" in2="SourceGraphic"/><feBlend result="blend" in2="SourceGraphic"/></filter></defs><path id="_01" data-name="1" class="cls-1" d="M507.787 506.641l-.9-.9a.639.639 0 0 0-.9 0l-4.334 4.341-1.942-1.949a.637.637 0 0 0-.9 0l-.9.9a.637.637 0 0 0 0 .9l2.392 2.392.9.9a.639.639 0 0 0 .9 0l.9-.9 4.784-4.784a.64.64 0 0 0 0-.9z" transform="translate(-497.719 -505.562)"/></svg>
