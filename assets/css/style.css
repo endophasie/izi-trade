@@ -1480,17 +1480,14 @@ html, body {
 	text-indent: 12px;
 	font: 400 12px 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #000;
-	background-color: #EDEDED;
+	background-color: #fff;
 	outline: none;
-	-webkit-transition: border-color 300ms ease,
-				background-color 300ms ease;
-	transition: border-color 300ms ease,
-				background-color 300ms ease;
+	-webkit-transition: border-color 300ms ease;
+	transition: border-color 300ms ease;
 }
 
 .form_field:focus {
   border-color: #ff5012;
-  background-color: #fff;
 }
 
 .form_field.is-textarea {
@@ -1503,7 +1500,7 @@ html, body {
 .form_field.is-textarea-message {
   border-radius: 6px;
   min-height: 40px;
-  padding: 11px 130px 0 0;
+  padding: 9px 130px 0 0;
   font-size: 14px;
   box-sizing: border-box;
   resize: vertical;

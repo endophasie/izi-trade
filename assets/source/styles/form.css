@@ -42,14 +42,12 @@
 	text-indent: 12px;
 	font: 400 12px $sans-serif;
 	color: #000;
-	background-color: #EDEDED;
+	background-color: #fff;
 	outline: none;
-	transition: border-color 300ms ease,
-				background-color 300ms ease;
+	transition: border-color 300ms ease;
 
 	&:focus {
 		border-color: $color-active;
-		background-color: #fff;
 	}
 
 	&.is-textarea {
@@ -62,7 +60,7 @@
 	&.is-textarea-message {
 		border-radius: 6px;
 		min-height: 40px;
-		padding: 11px 130px 0 0;
+		padding: 9px 130px 0 0;
 		font-size: 14px;
 		box-sizing: border-box;
 	    resize: vertical;
