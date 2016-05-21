@@ -24,8 +24,15 @@ $(document).ready(function() {
 		$('.popup_overlay').removeClass('is-show');
 	});
 
-	$('#main-slider').tinycarousel({
-        bullets  : true
+	$('#main-slider').owlCarousel({
+        items: 1,
+        nav: true,
+        dotsContainer: '.bullets'
+    });
+
+    $('.slider-nav_item').click(function (e) {
+        $('#main-slider').trigger('to.owl.carousel', [$(this).index(), 300]);
+        e.preventDefault();
     });
 
     $('#profile-feedback').tinycarousel({
