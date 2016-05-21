@@ -3,6 +3,8 @@
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+	height: 380px;
+    overflow: hidden;
 }
 
 .slider_item {
@@ -56,7 +58,7 @@
     }
 
     &.owl-prev {
-		left: 1%;
+		left: 5%;
 		background-image: inline('../../img/i-arr-l.svg');
 	}
 	&.owl-next {

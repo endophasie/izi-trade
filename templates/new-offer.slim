@@ -1,0 +1,62 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content
+					.history
+						h2.section_title
+            				span.section-title-inner
+            					|Игровая валюта
+            					span.i-sort
+            				span.section-title-slogan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quia maiores earum nulla
+        				form action=""
+	        				table.table_text.is-table-simple
+	        					thead
+	        						tr
+	        							th
+	        								a.table-sort_link.table_text-underline href="#"
+		        								|Игра
+		        								span.i-sort
+	        							th
+	        								a.table-sort_link.table_text-underline href="#"
+		        								|Сервер
+		        								span.i-sort
+	        							th
+	        								a.table-sort_link.table_text-underline href="#"
+		        								|Сторона
+		        								span.i-sort
+	        							th
+	        								span.table_text-underline Минимальная<br/>сумма заказа
+	        							th
+	        								span.table_text-underline Количество
+	        							th
+	        								span.table_text-underline Цена за ед.
+								tbody
+									tr
+										td
+											span.table-text_text Black Desert
+										td
+											span.table-text_text MineBossServer
+										td
+											span.table-text_text Орда
+										td
+											input.form_field.is-table-width type="text" placeholder="Сумма"/
+										td
+											input.form_field.is-table-width type="text" placeholder="Количество"/
+											.popup_bubble
+												span.i-info
+												.popup-bubble_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit libero nobis eveniet dolor suscipit perferendis ipsum quidem. Ducimus commodi, pariatur dolorum. Magnam vel quam in, optio corporis, aliquam deserunt rem?
+										td
+											input.form_field.is-table-width type="text" placeholder="Цена за ед."/
+							.form_end
+								button.form_btn.is-solo.js-btn-popup Создать
+
+        	include footer
+        	include popup_info

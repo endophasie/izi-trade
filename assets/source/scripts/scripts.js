@@ -24,6 +24,11 @@ $(document).ready(function() {
 		$('.popup_overlay').removeClass('is-show');
 	});
 
+    $('.js-btn-popup').on('click', function(e) {
+        $('.popup_overlay').addClass('is-show');
+        e.preventDefault();
+    });
+
 	$('#main-slider').owlCarousel({
         items: 1,
         nav: true,

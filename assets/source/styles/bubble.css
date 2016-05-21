@@ -1,0 +1,40 @@
+.popup_bubble {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.i-info {
+	display: inline-block;
+	vertical-align: middle;
+	@mixin icon i-info, 16px;
+
+	&:hover + .popup-bubble_text {
+		display: block;
+	}
+}
+
+.popup-bubble_text {
+	display: none;
+	position: absolute;
+	border: 2px solid $color-active;
+	border-radius: 4px;
+	background-color: #fff;
+	text-align: left;
+	padding: 10px 8px;
+	width: 200px;
+	top: 30px;
+	left: -7px;
+	z-index: 9;
+
+	&:before {
+		content: "";
+		position: absolute;
+		border-right: 6px solid transparent;
+		border-left: 6px solid transparent;
+		border-bottom: 8px solid $color-active;
+		top: -10px;
+		left: 7px;
+	}
+}

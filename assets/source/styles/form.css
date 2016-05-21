@@ -82,6 +82,10 @@
 			margin-right: 20px;
 		}
 	}
+
+	&.is-table-width {
+		max-width: 100px;
+	}
 }
 
 .form_select {
