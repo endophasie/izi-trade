@@ -32,17 +32,19 @@ $(document).ready(function() {
 	$('#main-slider').owlCarousel({
         items: 1,
         nav: true,
+        margin: 10,
         dotsContainer: '.bullets'
     });
 
-    $('.slider-nav_item').click(function (e) {
+    $('.slider-nav_item').on('click', function (e) {
         $('#main-slider').trigger('to.owl.carousel', [$(this).index(), 300]);
         e.preventDefault();
     });
 
-    $('#profile-feedback').tinycarousel({
-        bullets  : true,
-        buttons   : false
+    $('#feedback').owlCarousel({
+        dots  : true,
+        nav   : false,
+        items : 1
 	});
 
     $('.grid').isotope({

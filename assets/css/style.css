@@ -2878,44 +2878,23 @@ html, body {
 	font-size: 16px;
 	margin-bottom: 10px;
 }
-.feedbacks:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 .feedbacks {
-	height: 450px;
 	padding: 30px 0;
 }
 .feedbacks .disable {
   visibility: hidden;
 }
-.feedback_viewport {
-	margin: 0 auto 30px;
-	width: 760px;
-	height: 400px;
-	overflow: hidden;
-	position: relative;
-}
-.feedback_overview {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 760px;
-	height: 400px;
+.feedback_slider {
+	width: 100%;
+	height: auto;
 }
 
 .feedback_slide {
-	font-size: 0;
+	text-align: center;
+	padding: 0 30px;
 }
 
-.feedback_slide.slide {
-  float: left;
-  width: 760px;
-  height: 400px;
-}
-
-.feedback_nav {
+.feedbacks .owl-dots {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -2923,7 +2902,7 @@ html, body {
 	text-align: center;
 }
 
-.feedback-nav_item {
+.feedbacks .owl-dot {
 	display: inline-block;
 	font-size: 12px;
 	vertical-align: middle;
@@ -2935,7 +2914,7 @@ html, body {
 	cursor: pointer;
 }
 
-.feedback-nav_item.active {
+.feedbacks .owl-dot.active {
   background-color: #f00;
 }
 
@@ -2973,6 +2952,7 @@ html, body {
 	vertical-align: top;
 	width: 75%;
 	font-size: 12px;
+	text-align: left;
 }
 
 .feedback_title:after {
