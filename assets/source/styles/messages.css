@@ -8,6 +8,11 @@
 	background-color: #F7F7F7;
 }
 
+.messages-body {
+	height: 600px;
+	overflow-y: auto;
+}
+
 .chat {
 	flex: 1;
     align-self: flex-end;
@@ -22,8 +27,28 @@
 }
 
 .chat-content_read {
-	height: 300px;
+	height: 500px;
 	overflow-y: auto;
+}
+
+.chat-content_load {
+	height: 55px;
+}
+
+.chat-content-load_link {
+	display: block;
+	text-decoration: none;
+	size: 100%;
+	text-align: center;
+	line-height: 55px;
+	color: $nav-link;
+	background-color: #f9f9f9;
+	opacity: .7;
+	transition: opacity 300ms ease;
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .chat-actions {
