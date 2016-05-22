@@ -121,4 +121,9 @@
 		position: absolute;
 		right: 0;
 	}
+
+	&.is-reset {
+		opacity: .4;
+		margin-right: 20px;
+	}
 }
