@@ -789,16 +789,14 @@ html, body {
 	margin: 0;
 }
 .nav_item .nav-menu_list {
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 49px;
   left: -62px;
   background-color: #333234;
-  z-index: 0;
+  z-index: 99;
   padding: 20px 0 0;
   border-radius: 3px;
-  -webkit-transition: opacity 2000ms ease;
-  transition: opacity 2000ms ease;
 }
 .nav_item .nav-menu_list:before {
   content: '';
@@ -816,10 +814,7 @@ html, body {
 	.nav-menu_list:hover,
 	.nav_item:focus > .nav-menu_list,
 	.nav-menu_list:focus {
-  opacity: 1;
-  z-index: 99;
-  -webkit-transition: opacity 700ms ease;
-  transition: opacity 700ms ease;
+  display: block;
 }
 
 .nav-menu_item {
