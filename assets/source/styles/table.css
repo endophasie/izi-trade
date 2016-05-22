@@ -1,6 +1,10 @@
 .table_text {
 	width: 100%;
 
+	&.is-table-simple {
+		margin-bottom: 40px;
+	}
+
 	th {
 		height: 45px;
 		text-transform: uppercase;

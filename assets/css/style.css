@@ -1566,6 +1566,9 @@ html, body {
 .table_text {
 	width: 100%;
 }
+.table_text.is-table-simple {
+  margin-bottom: 40px;
+}
 .table_text th {
   height: 45px;
   text-transform: uppercase;
