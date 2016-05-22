@@ -1,0 +1,83 @@
+doctype html
+html lang="en"
+    include head
+
+    body
+        .master
+            include header
+            include navigation
+
+            main.main-content
+            	include actions-menu
+            	section.section-content
+    				form action=""
+        				table.table_text.is-table-simple
+        					thead
+        						tr
+        							th
+        								span.table_text-underline Драйвер
+        							th
+        								span.table_text-underline Игра
+        							th
+        								span.table_text-underline Тип прокачки
+        							th
+        								span.table_text-underline Расчет
+        							th
+        								span.table_text-underline Стоимость
+							tbody
+								tr
+									td
+										span.table-text_name endophasie
+										span.i-status.is-online
+										span.table-text_comm 3 года на сайте
+										span.table-text_comm 15 отзывов
+									td
+										span.table-text_text Black Desert
+									td
+										span.table-text_text Гринд
+									td
+										span.table-text_text 1 час
+									td
+										span.table-text_text 100 руб.
+						.form.is-page-form
+							.form_line
+								select.form_select
+									option disabled="disabled" selected="selected" Способ оплаты
+									option value="Яндекс Кошелек" Яндекс Кошелек
+									option value="WebMoney" WebMoney
+							.form_line
+								input.form_field.is-half type="text" placeholder="Получу"
+								input.form_field.is-half type="text" placeholder="Заплачу"
+							.form_line
+								input.form_field type="text" placeholder="Никнейм в игре"
+							.form_end
+								button.form_btn.is-solo Перейти к оплате
+				section.section-content.is-white
+					.chat.is-only
+						.chat-content
+							.chat-content_read
+								include message
+							.chat-content_write
+								form.form_message
+									.form-message_wrap
+										textarea.form_field.is-textarea-message placeholder="Написать сообщение"
+										input.form_btn.is-united type="submit" value="Отправить"
+						.chat-actions
+								a.chat-actions_link href="#"
+									span.chat-actions_icon.is-blacklist
+									span.chat-actions_text В черный список
+				section.section-content
+					h2.section_title
+        				span.section-title-inner Отзывы о продавце
+
+					include feedback
+				section.section-content.is-white
+					.section_form
+						h2.section_title.is-simple Оставить отзыв о продавце
+    					form action=""
+    						.form_line
+								textarea.form_field.is-textarea placeholder="Отзыв"
+							.form_end.request-info
+								input.form_btn.is-solo type="submit" value="Отправить"
+
+        	include footer
