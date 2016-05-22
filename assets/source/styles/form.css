@@ -89,6 +89,12 @@
 .form_select {
 	size: 100% 32px;
 	border: 2px solid #e5e5e5;
+	outline: none;
+	transition: border-color 300ms ease;
+
+	&:focus {
+		border-color: $color-active;
+	}
 
 	&.is-half {
 		width: 46.6%;

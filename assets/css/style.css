@@ -1529,6 +1529,13 @@ html, body {
 	width: 100%;
 	height: 32px;
 	border: 2px solid #e5e5e5;
+	outline: none;
+	-webkit-transition: border-color 300ms ease;
+	transition: border-color 300ms ease;
+}
+
+.form_select:focus {
+  border-color: #ff5012;
 }
 
 .form_select.is-half {
