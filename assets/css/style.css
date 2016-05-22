@@ -3140,6 +3140,7 @@ html, body {
 .guaranties_item.is-framed {
   background-color: #fff;
   padding-bottom: 40px;
+  margin-top: 50px;
 }
 
 .guaranties_item.is-framed:after {

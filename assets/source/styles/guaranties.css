@@ -48,6 +48,7 @@
     &.is-framed {
     	background-color: #fff;
     	padding-bottom: 40px;
+    	margin-top: 50px;
 
     	&:after {
 			bottom: 20px;
