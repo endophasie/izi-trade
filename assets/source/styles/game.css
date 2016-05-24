@@ -1,8 +1,14 @@
 
 .game-title_top {
-	position: relative;
-	line-height: 1;
 	height: 200px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+
+	&.is-img {
+		background: url('../img/game-title_pic.jpg') center center no-repeat;
+		background-size: cover;
+	}
 }
 
 .game-title_title {
@@ -11,13 +17,7 @@
 	text-shadow: 0.5px 0.866px 2px rgba(0, 0, 0, 0.5);
 	margin: 0 auto;
 	font-size: 38px;
-	position: relative;
-	top: -118px;
-}
-
-.game-title_pic {
-    size: 100% auto;
-    max-width: 100%;
+	line-height: 1;
 }
 
 .game-title_info {

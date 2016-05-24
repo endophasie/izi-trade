@@ -2596,9 +2596,20 @@ html, body {
 	color: #fff;
 }
 .game-title_top {
-	position: relative;
-	line-height: 1;
 	height: 200px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 10px;
+}
+.game-title_top.is-img {
+  background: url('../img/game-title_pic.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 .game-title_title {
@@ -2607,14 +2618,7 @@ html, body {
 	text-shadow: 0.5px 0.866px 2px rgba(0, 0, 0, 0.5);
 	margin: 0 auto;
 	font-size: 38px;
-	position: relative;
-	top: -118px;
-}
-
-.game-title_pic {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+	line-height: 1;
 }
 
 .game-title_info {
