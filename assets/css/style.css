@@ -877,18 +877,20 @@ html, body {
 	text-align: center;
 }
 .actions_list.is-fixed {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: top;
   position: fixed;
   left: 0;
   top: 155px;
   z-index: 999;
   width: auto;
   height: auto;
+  -webkit-transition: top 300ms ease;
+  transition: top 300ms ease;
 }
-@media (max-height: 700px) {
-
-  .actions_list.is-fixed {
-    position: absolute;
-  }
+.actions_list.is-fixed.menu-fixed-top {
+  top: 20px;
 }
 
 .actions_item {

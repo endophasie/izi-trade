@@ -8,14 +8,16 @@
 	text-align: center;
 
 	&.is-fixed {
+		will-change: top;
 		position: fixed;
 		left: 0;
 		top: 155px;
 		z-index: 999;
 		size: auto;
+		transition: top 300ms ease;
 
-		@media (height <= 700px) {
-			position: absolute;
+		&.menu-fixed-top {
+			top: 20px;
 		}
 	}
 }

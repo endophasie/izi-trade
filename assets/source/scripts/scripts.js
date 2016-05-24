@@ -6,7 +6,22 @@ function tabs($this) {
 
 }
 
+function menuFixed() {
+    var scrollTop = $(window).scrollTop(),
+        menu = $('.js-menu-fixed');
+
+    if (scrollTop > 150) {
+        menu.addClass('menu-fixed-top');
+    } else {
+        menu.removeClass('menu-fixed-top');
+    }
+}
+
 $(document).ready(function() {
+
+    $(window).on('scroll', function() {
+        menuFixed();
+    });
 
     $('.actions-type').on('click', function(e) {
         var $this = $(this);
