@@ -27,6 +27,10 @@
 		width: 160px;
 		padding: 0 5px;
 		transition: background-color 300ms ease;
+
+		&.table-text_left {
+			text-align: left;
+		}
 	}
 
 	tr:nth-child(even) td {
@@ -84,13 +88,6 @@
 	&:hover {
 		text-decoration: none;
 		color: $color-active;
-	}
-}
-
-.table-text_text {
-
-	&.is-left {
-		text-align: left;
 	}
 }
 

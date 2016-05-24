@@ -25,10 +25,6 @@ html, body {
     min-width: 900px;
     max-width: 1400px;
     margin: 0 auto;
-
-    &.is-messages {
-        size: 100%;
-    }
 }
 
 .section_title {

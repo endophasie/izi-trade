@@ -475,11 +475,6 @@ html, body {
     margin: 0 auto;
 }
 
-.main-content.is-messages {
-  width: 100%;
-  height: 100%;
-}
-
 .section_title {
     color: #3c3d41;
     font-weight: 300;
@@ -1598,6 +1593,9 @@ html, body {
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
 }
+.table_text td.table-text_left {
+  text-align: left;
+}
 .table_text tr:nth-child(even) td {
   background-color: #d9d9d9;
 }
@@ -1655,10 +1653,6 @@ html, body {
 .table-text_link:hover, .table-text_link:focus {
   text-decoration: none;
   color: #ff5012;
-}
-
-.table-text_text.is-left {
-  text-align: left;
 }
 
 .table-sort_link {
