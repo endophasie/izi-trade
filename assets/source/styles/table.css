@@ -30,6 +30,7 @@
 
 		&.table-text_left {
 			text-align: left;
+		    padding-left: 30px;
 		}
 	}
 

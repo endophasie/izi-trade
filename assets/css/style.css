@@ -1595,6 +1595,7 @@ html, body {
 }
 .table_text td.table-text_left {
   text-align: left;
+  padding-left: 30px;
 }
 .table_text tr:nth-child(even) td {
   background-color: #d9d9d9;
