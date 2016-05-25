@@ -1,5 +1,5 @@
 .header {
-	height: 80px;
+	height: 100px;
 }
 
 .header-content {
@@ -9,7 +9,7 @@
 	margin: 0 auto;
 	text-align: center;
 	font-size: 0;
-	line-height: 72px;
+	line-height: 100px;
 }
 
 .header_center {

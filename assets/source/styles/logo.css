@@ -5,7 +5,7 @@
 	display: block;
 	background: inline('../../img/logo.png') center center no-repeat;
 	size: size('../../img/logo.png');
-	background-size: size('../../img/logo.png');
+	background-size: 100% 100%;
 	text-decoration: none;
 	text-indent: -9999px;
 	margin: 0 auto;
