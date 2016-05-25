@@ -44,6 +44,23 @@
 	color: $nav-link;
 	transition: color 300ms ease;
 
+	&.is-menu-link {
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: relative;
+			top: 2px;
+			@mixin icon i-menu, 12px;
+			margin: 0 7px 0 0;
+		}
+
+		&:hover:before {
+			background: svg-load('../../img/i-menu.svg', fill=#ff5012) 0 0 no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
 	&:hover,
 	.is-active & {
 		color: $color-active;

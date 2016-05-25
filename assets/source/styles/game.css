@@ -59,6 +59,7 @@
 	outline: none;
 	padding-right: 15px;
 	width: 100%;
+	min-width: 135px;
 	text-indent: 3px;
 
 	&::placeholder {
@@ -77,6 +78,6 @@
 	padding: 0;
 	@mixin icon i-search, 12px;
 	position: absolute;
-	right: 0;
-	top: 4px;
+	right: -7px;
+	top: 5px;
 }

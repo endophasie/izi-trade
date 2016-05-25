@@ -11,7 +11,7 @@
 		background-color: #fafafa;
 		box-shadow: 2px 1.732px 2px 0px rgba(0, 0, 0, 0.28);
 	    position: relative;
-   		z-index: 2;
+   		z-index: 1;
    		padding: 0 5px;
 	}
 
@@ -94,6 +94,7 @@
 .table-sort_link {
 	text-decoration: none;
 	color: $base;
+	white-space: nowrap;
 	transition: color 300ms ease;
 
 	&:hover {
