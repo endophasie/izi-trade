@@ -61,12 +61,4 @@ $(document).ready(function() {
         nav   : false,
         items : 1
 	});
-
-    $('.grid').isotope({
-  		itemSelector: '.grid-item',
-        percentPosition: true,
-        masonry: {
-            columnWidth: '.grid-sizer'
-        }
-	});
 });
