@@ -112,14 +112,11 @@
 	background-color: $bg-main;
 	color: #fff;
 	border: 0;
+	border-radius: 6px;
 	transition: background-color 300ms ease;
 
 	&:hover {
 		background-color: $bg-main.9;
-	}
-
-	&.is-solo {
-		border-radius: 6px;
 	}
 
 	&.is-united {

@@ -39,12 +39,13 @@ html lang="en"
 							.form_line
 								input.form_field type="text" placeholder="Логин покупателя"
 							.form_end
-								button.form_btn.is-solo Пригласить
+								button.form_btn Пригласить
 				section.section-content.is-white
 					.chat.is-only
 						.chat-content
 							.chat-content_read
-								include message
+								.chat-content_read-wrap
+									include message
 							.chat-content_write
 								form.form_message
 									.form-message_wrap

@@ -31,6 +31,14 @@
 	overflow-y: auto;
 }
 
+.chat-content_read-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    min-height: 100%;
+}
+
 .chat-content_load {
 	height: 55px;
 }

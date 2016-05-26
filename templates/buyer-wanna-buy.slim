@@ -44,12 +44,13 @@ html lang="en"
 								input.form_field.is-half type="text" placeholder="Продам"
 								input.form_field.is-half type="text" placeholder="Сумма к оплате"
 							.form_end
-								button.form_btn.is-solo Выставить счет
+								button.form_btn Выставить счет
 				section.section-content.is-white
 					.chat.is-only
 						.chat-content
 							.chat-content_read
-								include message
+								.chat-content_read-wrap
+									include message
 							.chat-content_write
 								form.form_message
 									.form-message_wrap

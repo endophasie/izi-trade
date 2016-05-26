@@ -48,17 +48,19 @@ $(document).ready(function() {
         items: 1,
         nav: true,
         margin: 10,
+        smartSpeed: 1000,
         dotsContainer: '.bullets'
     });
 
     $('.slider-nav_item').on('click', function (e) {
-        $('#main-slider').trigger('to.owl.carousel', [$(this).index(), 300]);
+        $('#main-slider').trigger('to.owl.carousel', [$(this).index(), 1000]);
         e.preventDefault();
     });
 
     $('#feedback').owlCarousel({
         dots  : true,
         nav   : false,
-        items : 1
+        items : 1,
+        smartSpeed: 500
 	});
 });

@@ -55,12 +55,13 @@ html lang="en"
 							.form_line
 								input.form_field type="text" placeholder="Никнейм в игре"
 							.form_end
-								button.form_btn.is-solo Перейти к оплате
+								button.form_btn Перейти к оплате
 				section.section-content.is-white
 					.chat.is-only
 						.chat-content
 							.chat-content_read
-								include message
+								.chat-content_read-wrap
+									include message
 							.chat-content_write
 								form.form_message
 									.form-message_wrap
@@ -82,6 +83,6 @@ html lang="en"
     						.form_line
 								textarea.form_field.is-textarea placeholder="Отзыв"
 							.form_end.request-info
-								input.form_btn.is-solo type="submit" value="Отправить"
+								input.form_btn type="submit" value="Отправить"
 
         	include footer

@@ -37,8 +37,8 @@ html lang="en"
 										span.table-text_text 123,45 руб. (общая стоимость)
 						.form.is-page-form
 							.form_end
-								button.form_btn.is-solo.is-reset type="reset" Отменить
-								button.form_btn.is-solo Подтвердить
+								button.form_btn.is-reset type="reset" Отменить
+								button.form_btn Подтвердить
 						.form.is-page-form
 							.form_line
 								select.form_select
@@ -46,12 +46,13 @@ html lang="en"
 									option value="Яндекс Кошелек" Яндекс Кошелек
 									option value="WebMoney" WebMoney
 							.form_end
-								button.form_btn.is-solo Перейти к оплате
+								button.form_btn Перейти к оплате
 				section.section-content.is-white
 					.chat.is-only
 						.chat-content
 							.chat-content_read
-								include message
+								.chat-content_read-wrap
+									include message
 							.chat-content_write
 								form.form_message
 									.form-message_wrap
