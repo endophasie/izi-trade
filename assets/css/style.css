@@ -2664,13 +2664,14 @@ html, body {
 }
 
 .game-title_select {
-	background-color: #ff5012;
+	background-color: #1c203a;
 	font-weight: 400;
 	font-size: 16px;
 	height: 28px;
 	border: 0;
 	outline: none;
 	border-radius: 0;
+	color: #fff;
 }
 
 .game_table {
