@@ -1685,6 +1685,15 @@ html, body {
   color: #ff5012;
 }
 
+.table_select {
+	border: 0;
+	height: 30px;
+	color: #000;
+	outline: none;
+	text-align: center;
+	background-color: transparent;
+}
+
 .i-delete {
 	display: inline-block;
 	cursor: pointer;

@@ -102,6 +102,15 @@
 	}
 }
 
+.table_select {
+	border: 0;
+	height: 30px;
+	color: $base;
+	outline: none;
+	text-align: center;
+	background-color: transparent;
+}
+
 .i-delete {
 	display: inline-block;
 	cursor: pointer;
