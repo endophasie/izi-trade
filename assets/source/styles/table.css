@@ -108,6 +108,7 @@
 	color: $base;
 	outline: none;
 	text-align: center;
+    text-align-last: center;
 	background-color: transparent;
 }
 

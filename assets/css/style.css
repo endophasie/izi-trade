@@ -1691,6 +1691,8 @@ html, body {
 	color: #000;
 	outline: none;
 	text-align: center;
+    -moz-text-align-last: center;
+         text-align-last: center;
 	background-color: transparent;
 }
 
