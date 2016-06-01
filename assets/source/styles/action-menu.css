@@ -12,7 +12,7 @@
 		position: fixed;
 		left: 0;
 		top: 155px;
-		z-index: 999;
+		z-index: 9;
 		size: auto;
 		transition: top 300ms ease;
 
