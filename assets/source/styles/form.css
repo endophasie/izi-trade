@@ -50,6 +50,10 @@
 		border-color: $color-active;
 	}
 
+	&::placeholder {
+		font: 400 12px $sans-serif;
+	}
+
 	&.is-textarea {
 		min-height: 150px;
 		text-indent: 0;
@@ -81,8 +85,8 @@
 		}
 	}
 
-	&.is-table-width {
-		max-width: 100px;
+	&.is-list-width {
+		width: 200px;
 	}
 }
 
@@ -140,12 +144,13 @@
 
 .form-list_item {
 	margin-bottom: 10px;
+	white-space: nowrap;
 }
 
 .form-list_text {
 	display: inline-block;
 	vertical-align: middle;
-	width: 110px;
+	width: 127px;
 	padding-right: 10px;
 	line-height: 1;
 
@@ -159,7 +164,7 @@
 // select2 restyling
 
 .js-select {
-	min-width: 200px;
+	width: 200px;
 }
 
 .select2-container--default .select2-selection--single {
@@ -167,6 +172,7 @@
 	box-shadow: inset 0 1px 2px 0 #e5e5e5.3;
 	border-radius: 2px;
 	text-indent: 5px;
+	height: 32px;
 }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
@@ -185,7 +191,7 @@
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-	line-height: 23px;
+	line-height: 29px;
 }
 
 .select2-dropdown {
@@ -195,6 +201,10 @@
 
 .select2-results__option {
 	font: 400 12px $sans-serif;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 30px;
 }
 
 

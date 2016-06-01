@@ -65,6 +65,6 @@ $(document).ready(function() {
 	});
 
     $('.js-select').select2({
-        placeholder: 'Выберете опцию'
+        placeholder: 'Выберите опцию'
     });
 });

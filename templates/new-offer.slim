@@ -13,14 +13,17 @@ html lang="en"
 					.history
 						h2.section_title
             				span.section-title-inner
-            					|Игровая валюта
-            					span.i-sort
+            					select.section-title_select
+            						option disabled="disabled" selected="selected" Игровая валюта
+            						option Яндекс Деньги
+            						option WebMoney
+            						option Bitcoins
             				span.section-title-slogan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quia maiores earum nulla
         				form action=""
         					ul.form_list
 								li.form-list_item
 									strong.form-list_text Игра:
-									select.js-select
+									select.js-select style="width: 200px"
 										option
 										option Black Desert
 										option Black Desert
@@ -28,7 +31,7 @@ html lang="en"
 										option Black Desert
 								li.form-list_item
 									strong.form-list_text Сервер:
-									select.js-select
+									select.js-select style="width: 200px"
 										option
 										option MineBossServer
 										option MineBossServer
@@ -36,7 +39,7 @@ html lang="en"
 										option MineBossServer
 								li.form-list_item
 									strong.form-list_text Сторона:
-									select.js-select
+									select.js-select style="width: 200px"
 										option
 										option Орда
 										option Орда
@@ -44,16 +47,16 @@ html lang="en"
 										option Орда
 								li.form-list_item
 									strong.form-list_text Минимальная<br/>сумма заказа:
-									input.form_field.is-table-width type="text" placeholder="Сумма"/
+									input.form_field.is-list-width type="text" placeholder="Сумма"/
 								li.form-list_item
 									strong.form-list_text Количество:
-									input.form_field.is-table-width type="text" placeholder="Количество"/
+									input.form_field.is-list-width type="text" placeholder="Количество"/
 									.popup_bubble
 										span.i-info
 										.popup-bubble_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit libero nobis eveniet dolor suscipit perferendis ipsum quidem. Ducimus commodi, pariatur dolorum. Magnam vel quam in, optio corporis, aliquam deserunt rem?
 								li.form-list_item
 									strong.form-list_text Цена за ед.:
-									input.form_field.is-table-width type="text" placeholder="Цена за ед."/
+									input.form_field.is-list-width type="text" placeholder="Цена за ед."/
 
 							.form_end
 								button.form_btn.js-btn-popup Создать
