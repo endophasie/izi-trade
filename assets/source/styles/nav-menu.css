@@ -4,7 +4,9 @@
 	margin: 0;
 
 	.nav_item & {
-		display: none;
+		will-change: opacity, transform;
+		transform: scaleY(0);
+		opacity: 0;
 		position: absolute;
 	    top: 49px;
 	    left: -62px;
@@ -12,6 +14,7 @@
 		z-index: 99;
 		padding: 20px 0 0;
 		border-radius: 3px;
+		transition: opacity 700ms ease, transform 300ms ease;
 
 		&:before {
 			content: '';
@@ -29,7 +32,9 @@
 
 	.nav_item:hover > &,
 	&:hover {
-		display: block;
+		transform: scaleY(1);
+		opacity: 1;
+		transition: opacity 600ms ease;
 	}
 }
 
