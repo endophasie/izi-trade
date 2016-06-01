@@ -145,13 +145,21 @@
 .form-list_text {
 	display: inline-block;
 	vertical-align: middle;
-	width: 100px;
+	width: 110px;
+	padding-right: 10px;
 	line-height: 1;
 
 	& + strong {
 		display: inline-block;
 		vertical-align: middle;
 	}
+}
+
+
+// select2 restyling
+
+.js-select {
+	min-width: 200px;
 }
 
 .select2-container--default .select2-selection--single {
@@ -187,10 +195,6 @@
 
 .select2-results__option {
 	font: 400 12px $sans-serif;
-}
-
-.js-select {
-	min-width: 200px;
 }
 
 
