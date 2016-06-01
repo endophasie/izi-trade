@@ -1,6 +1,9 @@
 @import 'normalize.css/normalize';
 @import 'vars';
 
+@import 'select2';
+@import 'owl.carousel';
+
 @import 'page';
 
 @import 'header';
@@ -20,7 +23,6 @@
 @import 'bubble';
 
 @import 'slider';
-@import 'owl.carousel';
 @import 'games';
 @import 'game';
 @import 'about';
