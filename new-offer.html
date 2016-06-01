@@ -95,94 +95,74 @@
               <span class="section-title-inner">Игровая валюта<span class="i-sort"></span></span><span class="section-title-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quia maiores earum nulla</span>
             </h2>
             <form action="">
-              <table class="table_text is-table-simple">
-                <thead>
-                  <tr>
-                    <th>
-                      <div class="table_text-underline">
-                        <select class="table_select">
-                          <option disabled="disabled" selected="selected">
-                            Игра
-                          </option>
-                          <option value="Black Desert">
-                            Black Desert
-                          </option>
-                          <option value="Black Desert 2">
-                            Black Desert 2
-                          </option>
-                        </select>
-                      </div>
-                    </th>
-                    <th>
-                      <div class="table_text-underline">
-                        <select class="table_select">
-                          <option disabled="disabled" selected="selected">
-                            Сервер
-                          </option>
-                          <option value="MineBossServer">
-                            MineBossServer
-                          </option>
-                          <option value="MineBossServer1984">
-                            MineBossServer1984
-                          </option>
-                        </select>
-                      </div>
-                    </th>
-                    <th>
-                      <div class="table_text-underline">
-                        <select class="table_select">
-                          <option disabled="disabled" selected="selected">
-                            Сторона
-                          </option>
-                          <option value="Орда">
-                            Орда
-                          </option>
-                          <option value="Золотая Орда">
-                            Золотая Орда
-                          </option>
-                        </select>
-                      </div>
-                    </th>
-                    <th>
-                      <span class="table_text-underline">Минимальная<br/>сумма заказа</span>
-                    </th>
-                    <th>
-                      <span class="table_text-underline">Количество</span>
-                    </th>
-                    <th>
-                      <span class="table_text-underline">Цена за ед.</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <span class="table-text_text">Black Desert</span>
-                    </td>
-                    <td>
-                      <span class="table-text_text">MineBossServer</span>
-                    </td>
-                    <td>
-                      <span class="table-text_text">Орда</span>
-                    </td>
-                    <td>
-                      <input class="form_field is-table-width" placeholder="Сумма" type="text" />
-                    </td>
-                    <td>
-                      <input class="form_field is-table-width" placeholder="Количество" type="text" />
-                      <div class="popup_bubble">
-                        <span class="i-info"></span>
-                        <div class="popup-bubble_text">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit libero nobis eveniet dolor suscipit perferendis ipsum quidem. Ducimus commodi, pariatur dolorum. Magnam vel quam in, optio corporis, aliquam deserunt rem?
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <input class="form_field is-table-width" placeholder="Цена за ед." type="text" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <ul class="form_list">
+                <li class="form-list_item">
+                  <strong class="form-list_text">Игра:</strong><select class="js-select">
+                    <option></option>
+                    <option>
+                      Black Desert
+                    </option>
+                    <option>
+                      Black Desert
+                    </option>
+                    <option>
+                      Black Desert
+                    </option>
+                    <option>
+                      Black Desert
+                    </option>
+                  </select>
+                </li>
+                <li class="form-list_item">
+                  <strong class="form-list_text">Сервер:</strong><select class="js-select">
+                    <option></option>
+                    <option>
+                      MineBossServer
+                    </option>
+                    <option>
+                      MineBossServer
+                    </option>
+                    <option>
+                      MineBossServer
+                    </option>
+                    <option>
+                      MineBossServer
+                    </option>
+                  </select>
+                </li>
+                <li class="form-list_item">
+                  <strong class="form-list_text">Сторона:</strong><select class="js-select">
+                    <option></option>
+                    <option>
+                      Орда
+                    </option>
+                    <option>
+                      Орда
+                    </option>
+                    <option>
+                      Орда
+                    </option>
+                    <option>
+                      Орда
+                    </option>
+                  </select>
+                </li>
+                <li class="form-list_item">
+                  <strong class="form-list_text">Минимальная<br/>сумма заказа:</strong><input class="form_field is-table-width" placeholder="Сумма" type="text" />
+                </li>
+                <li class="form-list_item">
+                  <strong class="form-list_text">Количество:</strong><input class="form_field is-table-width" placeholder="Количество" type="text" />
+                  <div class="popup_bubble">
+                    <span class="i-info"></span>
+                    <div class="popup-bubble_text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit libero nobis eveniet dolor suscipit perferendis ipsum quidem. Ducimus commodi, pariatur dolorum. Magnam vel quam in, optio corporis, aliquam deserunt rem?
+                    </div>
+                  </div>
+                </li>
+                <li class="form-list_item">
+                  <strong class="form-list_text">Цена за ед.:</strong><input class="form_field is-table-width" placeholder="Цена за ед." type="text" />
+                </li>
+              </ul>
               <div class="form_end">
                 <button class="form_btn js-btn-popup">Создать</button>
               </div>
@@ -256,6 +236,7 @@
       </footer>
       <script src="assets/js/jquery-2.1.3.min.js"></script>
       <script src="assets/js/owl.carousel.min.js"></script>
+      <script src="assets/js/select2.min.js"></script>
       <script src="assets/js/scripts.min.js"></script>
       <div class="popup_overlay">
         <div class="popup">
