@@ -102,6 +102,14 @@ html, body {
     }
 }
 
+.section-title_select {
+    height: 30px;
+    border: 0;
+    outline: none;
+    text-align: center;
+    text-align-last: center;
+}
+
 .section-content {
     background-color: #fafafa;
     padding: 40px 0 80px;

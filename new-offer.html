@@ -92,12 +92,25 @@
         <section class="section-content">
           <div class="history">
             <h2 class="section_title">
-              <span class="section-title-inner">Игровая валюта<span class="i-sort"></span></span><span class="section-title-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quia maiores earum nulla</span>
+              <span class="section-title-inner"><select class="section-title_select">
+                  <option disabled="disabled" selected="selected">
+                    Игровая валюта
+                  </option>
+                  <option>
+                    Яндекс Деньги
+                  </option>
+                  <option>
+                    WebMoney
+                  </option>
+                  <option>
+                    Bitcoins
+                  </option>
+                </select></span><span class="section-title-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quia maiores earum nulla</span>
             </h2>
             <form action="">
               <ul class="form_list">
                 <li class="form-list_item">
-                  <strong class="form-list_text">Игра:</strong><select class="js-select">
+                  <strong class="form-list_text">Игра:</strong><select class="js-select" style="width: 200px">
                     <option></option>
                     <option>
                       Black Desert
@@ -114,7 +127,7 @@
                   </select>
                 </li>
                 <li class="form-list_item">
-                  <strong class="form-list_text">Сервер:</strong><select class="js-select">
+                  <strong class="form-list_text">Сервер:</strong><select class="js-select" style="width: 200px">
                     <option></option>
                     <option>
                       MineBossServer
@@ -131,7 +144,7 @@
                   </select>
                 </li>
                 <li class="form-list_item">
-                  <strong class="form-list_text">Сторона:</strong><select class="js-select">
+                  <strong class="form-list_text">Сторона:</strong><select class="js-select" style="width: 200px">
                     <option></option>
                     <option>
                       Орда
@@ -148,10 +161,10 @@
                   </select>
                 </li>
                 <li class="form-list_item">
-                  <strong class="form-list_text">Минимальная<br/>сумма заказа:</strong><input class="form_field is-table-width" placeholder="Сумма" type="text" />
+                  <strong class="form-list_text">Минимальная<br/>сумма заказа:</strong><input class="form_field is-list-width" placeholder="Сумма" type="text" />
                 </li>
                 <li class="form-list_item">
-                  <strong class="form-list_text">Количество:</strong><input class="form_field is-table-width" placeholder="Количество" type="text" />
+                  <strong class="form-list_text">Количество:</strong><input class="form_field is-list-width" placeholder="Количество" type="text" />
                   <div class="popup_bubble">
                     <span class="i-info"></span>
                     <div class="popup-bubble_text">
@@ -160,7 +173,7 @@
                   </div>
                 </li>
                 <li class="form-list_item">
-                  <strong class="form-list_text">Цена за ед.:</strong><input class="form_field is-table-width" placeholder="Цена за ед." type="text" />
+                  <strong class="form-list_text">Цена за ед.:</strong><input class="form_field is-list-width" placeholder="Цена за ед." type="text" />
                 </li>
               </ul>
               <div class="form_end">
