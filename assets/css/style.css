@@ -1411,7 +1411,7 @@ html, body {
   height: 50px;
   box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.28);
   position: relative;
-  z-index: 2;
+  z-index: 20;
 }
 
 .nav_list {
@@ -1492,7 +1492,13 @@ html, body {
 	margin: 0;
 }
 .nav_item .nav-menu_list {
-  display: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: opacity, transform;
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  opacity: 0;
   position: absolute;
   top: 49px;
   left: -62px;
@@ -1500,6 +1506,10 @@ html, body {
   z-index: 99;
   padding: 20px 0 0;
   border-radius: 3px;
+  -webkit-transition: opacity 700ms ease, -webkit-transform 300ms ease;
+  transition: opacity 700ms ease, -webkit-transform 300ms ease;
+  transition: opacity 700ms ease, transform 300ms ease;
+  transition: opacity 700ms ease, transform 300ms ease, -webkit-transform 300ms ease;
 }
 .nav_item .nav-menu_list:before {
   content: '';
@@ -1517,7 +1527,12 @@ html, body {
 	.nav-menu_list:hover,
 	.nav_item:focus > .nav-menu_list,
 	.nav-menu_list:focus {
-  display: block;
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+  opacity: 1;
+  -webkit-transition: opacity 600ms ease;
+  transition: opacity 600ms ease;
 }
 
 .nav-menu_item {
@@ -1591,7 +1606,7 @@ html, body {
   position: fixed;
   left: 0;
   top: 155px;
-  z-index: 999;
+  z-index: 9;
   width: auto;
   height: auto;
   -webkit-transition: top 300ms ease;
