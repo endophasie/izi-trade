@@ -63,4 +63,8 @@ $(document).ready(function() {
         items : 1,
         smartSpeed: 500
 	});
+
+    $('.js-select').select2({
+        placeholder: 'Выберете опцию'
+    });
 });
