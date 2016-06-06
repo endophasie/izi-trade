@@ -1531,12 +1531,16 @@ html, body {
   left: -62px;
   background-color: #333234;
   z-index: 99;
-  padding: 20px 0 0;
   border-radius: 3px;
-  -webkit-transition: opacity 700ms ease, -webkit-transform 300ms ease;
-  transition: opacity 700ms ease, -webkit-transform 300ms ease;
-  transition: opacity 700ms ease, transform 300ms ease;
-  transition: opacity 700ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+  -webkit-transition: opacity 700ms ease,
+					-webkit-transform 300ms ease;
+  transition: opacity 700ms ease,
+					-webkit-transform 300ms ease;
+  transition: opacity 700ms ease,
+					transform 300ms ease;
+  transition: opacity 700ms ease,
+					transform 300ms ease,
+					-webkit-transform 300ms ease;
 }
 .nav_item .nav-menu_list:before {
   content: '';
@@ -1562,11 +1566,12 @@ html, body {
   transition: opacity 600ms ease;
 }
 
-.nav-menu_item {
-	margin-bottom: 7px;
+.footer-col_nav .nav-menu_item {
+  margin-bottom: 10px;
 }
 
 .nav-menu_link {
+	display: block;
 	text-decoration: none;
 	color: #fff;
 	-webkit-transition: color 300ms ease;
@@ -1586,14 +1591,12 @@ html, body {
 }
 
 .nav_item .nav-menu_link {
-  display: block;
   width: 170px;
-  height: 40px;
-  line-height: 37px;
   opacity: .7;
+  line-height: 1.2;
   font-weight: 400;
   font-size: 14px;
-  padding: 0 20px 0 30px;
+  padding: 12px 20px 12px 30px;
   text-transform: none;
   position: relative;
   -webkit-transition: background-color 300ms ease,
@@ -1605,16 +1608,6 @@ html, body {
 .nav_item .nav-menu_link:hover, .nav_item .nav-menu_link:focus {
   background-color: #3d3c3e;
   opacity: 1;
-}
-
-.nav-link_comm {
-	color: #9f9f9f;
-	font-size: 10px;
-	position: absolute;
-	bottom: 6px;
-	left: 3px;
-	line-height: 1;
-	text-transform: none;
 }
 .actions_list {
 	margin: 0;
