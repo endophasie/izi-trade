@@ -1485,6 +1485,24 @@ html, body {
   color: #ff5012;
 }
 
+.nav-item_current {
+	color: #959595;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -30px;
+	line-height: 1;
+	font-weight: 400;
+	text-transform: none;
+	display: none;
+}
+
+.is-active .nav-item_current {
+  display: block;
+}
+
 .bubble {
 	border-radius: 50%;
 	background-color: #ff5012;
