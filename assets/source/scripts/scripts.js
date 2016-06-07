@@ -1,9 +1,8 @@
 function tabs($this) {
-    var active_tab = $this.attr('href');
+    var active_tab = $this.find('.js-tab-link').attr('href');
 
     $(active_tab).addClass('is-active').siblings().removeClass('is-active');
     $this.addClass('is-active').siblings().removeClass('is-active');
-
 }
 
 function menuFixed() {
@@ -27,6 +26,11 @@ $(document).ready(function() {
         var $this = $(this);
 
         e.preventDefault();
+        tabs($this);
+    });
+
+    $('.actions_item').on('click', function() {
+        var $this = $(this);
         tabs($this);
     });
 

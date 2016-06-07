@@ -36,124 +36,526 @@ html lang="en"
                 section.games
                     ul.actions_list
                         li.actions_item
-                            a.actions_link href="/game-currency.html"
+                            a.actions_link.js-tab-link href="#game-currency"
                                 span.actions_icon.i-coins
                                 span.actions_text Игровая валюта
                         li.actions_item
-                            a.actions_link href="/game-values.html"
+                            a.actions_link.js-tab-link href="#game-values"
                                 span.actions_icon.i-values
                                 span.actions_text Игровые ценности
                         li.actions_item.is-active
-                            a.actions_link href="/driver.html"
+                            a.actions_link.js-tab-link href="#driver"
                                 span.actions_icon.i-driver
                                 span.actions_text Услуги драйвера
                         li.actions_item
-                            a.actions_link href="/wanna-buy.html"
+                            a.actions_link.js-tab-link href="#wanna-buy"
                                 span.actions_icon.i-wannabuy
                                 span.actions_text Хочу купить
                         li.actions_item
-                            a.actions_link href="/one-sell.html"
+                            a.actions_link.js-tab-link href="#one-sell"
                                 span.actions_icon.i-onetime
                                 span.actions_text Разовая продажа
-                    .actions_content
-                        .actions_menu
-                            .actions_types
-                                a.actions-type.is-active href="#cubes"
-                                    span.actions-type_icon.i-cube
-                                    span.actions-type_text Плитка
-                                a.actions-type href="#list"
-                                    span.actions-type_icon.i-list
-                                    span.actions-type_text Список
-                        .actions_viewport
-                            .actions.is-cubes.is-active#cubes
-                                .actions_grid
-                                    .action_game
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-1.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                    .action_game.action_game-big
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-2.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                    .action_game
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-3.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                    .action_game.action_game-big
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-4.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                    .action_game
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-5.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                    .action_game
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-6.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                    .action_game
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-7.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                    .action_game.action_game-big
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-8.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                    .action_game
-                                        a.action-game_link href="#"
-                                            img.action-game_pic src="assets/img/games/game-9.png"
-                                            .action-game_info
-                                                .action-game_title Albion Online
-                                                .action-game_text.badge.is-large 14 предложений
-                                a.btn_load href="#" Показать еще
-                            .actions.is-list#list
-                                .action_columns
-                                    .action_list-letter
-                                        .action_letter
-                                            span.action-letter_letter A
-                                        table.action_table
-                                            tr
-                                                th
-                                                    span.game_title Albion Online
-                                                    span.badge.is-top top
-                                                td
-                                                    span.game_info 14 предложений
-                                            tr
-                                                th
-                                                    span.game_title Atlantica
-                                                td
-                                                    span.game_info 30 предложений
-                                    .action_list-letter
-                                        .action_letter
-                                            span.action-letter_letter B
-                                        table.action_table
-                                            tr
-                                                th
-                                                    span.game_title Black Desert
-                                                td
-                                                    span.game_info 144 предложений
-                                            tr
-                                                th
-                                                    span.game_title Black Books
-                                                    span.badge.is-new new
-                                                td
-                                                    span.game_info 3 предложеня
+                    .games-actions
+                        .actions_content#game-currency
+                            ul.actions_types
+                                li.actions-type.is-active
+                                    a.actions-type_link.js-tab-link href="#game-currency-cubes"
+                                        span.actions-type_icon.i-cube
+                                        span.actions-type_text Плитка
+                                li.actions-type
+                                    a.actions-type_link.js-tab-link href="#game-currency-list"
+                                        span.actions-type_icon.i-list
+                                        span.actions-type_text Список
+                            .actions_viewport
+                                .actions.is-cubes.is-active#game-currency-cubes
+                                    .actions_grid
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-1.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-2.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-3.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-4.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-5.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-6.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-7.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-8.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-9.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                    a.btn_load href="#" Показать еще
+                                .actions.is-list#game-currency-list
+                                    .action_columns
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter A
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Albion Online
+                                                        span.badge.is-top top
+                                                    td
+                                                        span.game_info 14 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Atlantica
+                                                    td
+                                                        span.game_info 30 предложений
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter B
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Black Desert
+                                                    td
+                                                        span.game_info 144 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Black Books
+                                                        span.badge.is-new new
+                                                    td
+                                                        span.game_info 3 предложения
+                        .actions_content#game-values
+                            ul.actions_types
+                                li.actions-type.is-active
+                                    a.actions-type_link.js-tab-link href="#game-values-cubes"
+                                        span.actions-type_icon.i-cube
+                                        span.actions-type_text Плитка
+                                li.actions-type
+                                    a.actions-type_link.js-tab-link href="#game-values-list"
+                                        span.actions-type_icon.i-list
+                                        span.actions-type_text Список
+                            .actions_viewport
+                                .actions.is-cubes.is-active#game-values-cubes
+                                    .actions_grid
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-1.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-2.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-3.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-4.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-5.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-6.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-7.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-8.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-9.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                    a.btn_load href="#" Показать еще
+                                .actions.is-list#game-values-list
+                                    .action_columns
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter A
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Albion Online
+                                                        span.badge.is-top top
+                                                    td
+                                                        span.game_info 14 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Atlantica
+                                                    td
+                                                        span.game_info 30 предложений
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter B
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Black Desert
+                                                    td
+                                                        span.game_info 144 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Black Books
+                                                        span.badge.is-new new
+                                                    td
+                                                        span.game_info 3 предложения
+                        .actions_content.is-active#driver
+                            ul.actions_types
+                                li.actions-type.is-active
+                                    a.actions-type_link.js-tab-link href="#driver-cubes"
+                                        span.actions-type_icon.i-cube
+                                        span.actions-type_text Плитка
+                                li.actions-type
+                                    a.actions-type_link.js-tab-link href="#driver-list"
+                                        span.actions-type_icon.i-list
+                                        span.actions-type_text Список
+                            .actions_viewport
+                                .actions.is-cubes.is-active#driver-cubes
+                                    .actions_grid
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-1.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-2.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-3.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-4.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-5.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-6.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-7.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-8.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-9.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                    a.btn_load href="#" Показать еще
+                                .actions.is-list#driver-list
+                                    .action_columns
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter A
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Albion Online
+                                                        span.badge.is-top top
+                                                    td
+                                                        span.game_info 14 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Atlantica
+                                                    td
+                                                        span.game_info 30 предложений
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter B
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Black Desert
+                                                    td
+                                                        span.game_info 144 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Black Books
+                                                        span.badge.is-new new
+                                                    td
+                                                        span.game_info 3 предложения
+                        .actions_content#wanna-buy
+                            ul.actions_types
+                                li.actions-type.is-active
+                                    a.actions-type_link.js-tab-link href="#wanna-buy-cubes"
+                                        span.actions-type_icon.i-cube
+                                        span.actions-type_text Плитка
+                                li.actions-type
+                                    a.actions-type_link.js-tab-link href="#wanna-buy-list"
+                                        span.actions-type_icon.i-list
+                                        span.actions-type_text Список
+                            .actions_viewport
+                                .actions.is-cubes.is-active#wanna-buy-cubes
+                                    .actions_grid
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-1.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-2.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-3.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-4.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-5.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-6.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-7.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-8.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-9.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                    a.btn_load href="#" Показать еще
+                                .actions.is-list#wanna-buy-list
+                                    .action_columns
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter A
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Albion Online
+                                                        span.badge.is-top top
+                                                    td
+                                                        span.game_info 14 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Atlantica
+                                                    td
+                                                        span.game_info 30 предложений
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter B
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Black Desert
+                                                    td
+                                                        span.game_info 144 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Black Books
+                                                        span.badge.is-new new
+                                                    td
+                                                        span.game_info 3 предложения
+                        .actions_content#one-sell
+                            ul.actions_types
+                                li.actions-type.is-active
+                                    a.actions-type_link.js-tab-link href="#one-sell-cubes"
+                                        span.actions-type_icon.i-cube
+                                        span.actions-type_text Плитка
+                                li.actions-type
+                                    a.actions-type_link.js-tab-link href="#one-sell-list"
+                                        span.actions-type_icon.i-list
+                                        span.actions-type_text Список
+                            .actions_viewport
+                                .actions.is-cubes.is-active#one-sell-cubes
+                                    .actions_grid
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-1.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-2.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-3.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-4.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-5.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-6.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-7.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game.action_game-big
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-8.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                        .action_game
+                                            a.action-game_link href="#"
+                                                img.action-game_pic src="assets/img/games/game-9.png"
+                                                .action-game_info
+                                                    .action-game_title Albion Online
+                                                    .action-game_text.badge.is-large 14 предложений
+                                    a.btn_load href="#" Показать еще
+                                .actions.is-list#one-sell-list
+                                    .action_columns
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter A
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Albion Online
+                                                        span.badge.is-top top
+                                                    td
+                                                        span.game_info 14 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Atlantica
+                                                    td
+                                                        span.game_info 30 предложений
+                                        .action_list-letter
+                                            .action_letter
+                                                span.action-letter_letter B
+                                            table.action_table
+                                                tr
+                                                    th
+                                                        span.game_title Black Desert
+                                                    td
+                                                        span.game_info 144 предложений
+                                                tr
+                                                    th
+                                                        span.game_title Black Books
+                                                        span.badge.is-new new
+                                                    td
+                                                        span.game_info 3 предложения
                 section.about
                     h3.section_title Почему мы?
                     ul.about_list
