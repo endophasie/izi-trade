@@ -3040,11 +3040,16 @@ html, body {
 .actions_content {
 	padding-top: 13px;
 	background-color: rgba(28, 32, 58, 0.9);
+	display: none;
+}
+.actions_content.is-active {
+  display: block;
 }
 
 .actions_viewport {
 	padding: 30px 0 80px;
 	position: relative;
+	clear: both;
 }
 
 .actions {
@@ -3055,35 +3060,24 @@ html, body {
   display: block;
 }
 
-.actions_menu:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.actions_menu {
-	margin: 0 0 15px;
-
-}
 .actions_types {
 	border: 1px solid #fff;
 	border-radius: 4px;
 	font-size: 0;
 	float: right;
-	margin-right: 40px;
+	margin: 0 40px 15px 0;
+	padding: 0;
 }
 
 .actions-type {
 	display: inline-block;
 	font-size: 12px;
-	color: #fff;
-	text-decoration: none;
 	padding: 1px 5px 3px;
+	cursor: pointer;
 }
 
 .actions-type.is-active {
   background-color: #fff;
-  color: #1c203a;
 }
 
 .actions-type.is-active .i-cube {
@@ -3102,6 +3096,16 @@ html, body {
   background-size: 100% 100%;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
+}
+
+.actions-type_link {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+}
+
+.is-active > .actions-type_link {
+  color: #1c203a;
 }
 
 .actions-type_icon {
